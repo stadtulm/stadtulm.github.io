@@ -44,8 +44,8 @@ primary_navigation:
         url: /projects/openbike/
       - name: digitransit
         url: /projects/digitransit/
-  - name: Blog
-    url: /blog/
+#  - name: Blog
+#    url: /blog/
 
 #secondary_navigation:
 #  - name: Secondary link
