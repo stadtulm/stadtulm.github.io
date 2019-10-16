@@ -20,6 +20,6 @@
   "license": "CC0-1.0",
   "dependencies": {
     "a11y": "^0.5.1",
-    "uswds": "^2.0.2"
+    "uswds": "^2.2.1"
   }
 }

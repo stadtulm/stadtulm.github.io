@@ -1,17 +1,6 @@
-<!--
-  Federalist recommends you use Continuous Integration to automatically test
-  and validate any new changes to your site. CircleCI is free for open source
-  projcets. You should replace this badge with your own.
+# ulm.dev
 
-  https://circleci.com/
--->
-[![CircleCI](https://circleci.com/gh/18F/federalist-uswds-jekyll.svg?style=svg)](https://circleci.com/gh/18F/federalist-uswds-jekyll)
-
-# Federalist + U.S. Web Design System + Jekyll
-
-This [Jekyll theme](https://jekyllrb.com/docs/themes/) is developed using the [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) and is focused on providing developers a starter kit and reference implementation for Federalist websites.
-
-This code uses the [Jekyll](https://jekyllrb.com) site engine and built with Ruby. If you prefer to use Javascript, check out [federalist-uswds-gatsby](https://github.com/18F/federalist-uswds-gatsby), which uses [Gatsby](https://gatsbyjs.org) site engine.
+This website is based on the [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) [Jekyll theme](https://jekyllrb.com/docs/themes/).
 
 This project assumes that you are comfortable editing source code. If you prefer to launch a website without editing any source code, checkout [uswds-jekyll](https://github.com/18F/uswds-jekyll), which allows you to change the layout and content with configuration files.
 
@@ -77,8 +66,8 @@ permalink: /example-page-with-sidebar
 
 Clone the repository.
 
-    $ git clone https://github.com/18F/federalist-uswds-jekyll
-    $ cd federalist-uswds-jekyll
+    $ git clone https://github.com/stadtulm/ulm.dev
+    $ cd ulm.dev
 
 Install the Node.js dependencies.
 
@@ -99,21 +88,12 @@ After you make changes, be sure to run the tests.
 
     $ npm test
 
-Note that when built by Federalist, `npm run federalist` is used instead of the
-`build` script.
-
 
 ## Technologies you should be familiarize yourself with
 
 - [Jekyll](https://jekyllrb.com/docs/) - The primary site engine that builds your code and content.
 - [Front Matter](https://jekyllrb.com/docs/frontmatter) - The top of each page/post includes keywords within `--` tags. This is meta data that helps Jekyll build the site, but you can also use it to pass custom variables.
 - [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) 
-- [Jekyll Search](https://github.com/18F/jekyll_pages_api_search/)
-
-
-## Contributing
-
-See [CONTRIBUTING](CONTRIBUTING.md) for additional information.
 
 ## Public domain
 

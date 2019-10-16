@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="grid-row grid-gap">
+  <aside class="usa-layout-docs-sidenav desktop:grid-col-3 padding-bottom-4">
+    <nav aria-label="Secondary navigation">
+      <ul class="usa-sidenav">
+        {% for item in site.projects %}
+        <li class="usa-sidenav__item">
+          {% if page.permalink == item.permalink %}
+            <a class="usa-current" href="{{ item.permalink | prepend: site.baseurl }}">{{ item.title }}</a>
+          {% else %}
+            <a href="{{ item.permalink | prepend: site.baseurl }}">{{ item.title }}</a>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
+    <h1>{{ page.title }}</h1>
+    {% if page.large_image %}
+    <img src="{{ site.baseurl }}{{ page.large_image }}" alt="{{ page.image_alt }}" />
+    {% endif %}
+    {{ content }}
+  </div>
+</div>
