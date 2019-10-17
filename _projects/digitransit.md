@@ -2,8 +2,8 @@
 layout: project
 title: Digitransit
 permalink: /projects/digitransit/
-#large_image: /assets/images/openbike-hero.jpg
-#image_alt: Fahrräder vor Zelt
+large_image: /assets/images/digitransit-191017.png
+image_alt: Benutzeroberfläche von digitransit
 ---
 
 Multimodales Routing, mit möglichst vielen Mobilitätsangeboten in der Stadt - basierend auf offenen Daten und als Teil einer [weltweiten Entwickelndencommunity](https://github.com/hsldevcom/digitransit-ui).
