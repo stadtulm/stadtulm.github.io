@@ -4,9 +4,9 @@ layout: post
 date: 17. Oktober 2019
 author: Kathi Schweiger
 excerpt: Am Montag, dem 14. Oktober durften wir das Projekt OpenBike erstmals den KollegInnen der Stadtverwaltung und unseren ProjektpartnerInnen von ADFC und EBU vorstellen.
-large_image: /assets/images/blog/20191014_kickoff_1.jpg
-image_alt: Die Auftaktveranstaltung im Münsterplatz 25
 ---
+
+![](/assets/images/blog/20191014_kickoff_1.jpg)
 
 Eigentlich ist aktuell im _M 25_ am Münsterplatz eine (empfehlenswerte!) Dauerausstellung zur [Hochschule für Gestaltung](https://de.wikipedia.org/wiki/Hochschule_f%C3%BCr_Gestaltung_Ulm) zu sehen. Am Montag, dem 14. Oktober durften wir daher zwischen Architekturmodellen und Original-Einrichtungsgegenständen der hfg das Projekt OpenBike im kleinen Kreise interessierter VerwaltungsmitarbeiterInnen und ProjektpartnerInnen vorstellen.
 
