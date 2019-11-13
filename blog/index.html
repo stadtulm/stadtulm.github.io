@@ -19,7 +19,7 @@ pagination:
         <h3 class="title"><a class="usa-link text-no-underline" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>
         <div class="text-base margin-bottom-2">
           <div class="margin-top-neg-105">
-            von <span class="text-bold">{{ post.author }}</span> · {{ post.date | date: '%d %B %Y' }}
+            von <span class="text-bold">{{ post.author }}</span> · {{ post.date | localize: '%d. %B %Y' }}
           </div>
         </div>
         <div>

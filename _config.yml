@@ -34,6 +34,8 @@ google_analytics_ua: ''
 # Configuration for DAP, add your agency ID here:
 dap_agency: ''
 
+lang: de
+
 # Site Navigation
 primary_navigation:
   - name: Home
