@@ -1,7 +1,7 @@
 ---
 title: Vernetzungstreffen beim FORUM Offene Stadt und dem Code-for-Germany-Summit in Hamburg
 layout: post
-date: 13. November 2019
+date: 2019-11-13
 author: Stefan Kaufmann
 excerpt: Wir waren beim FORUM Offene Stadt der Körber-Stiftung und dem anschließenden Code-for-Germany-Summit in Hamburg, um die frohe Kunde von digitransit und OpenBike zu verbreiten.
 ---

@@ -1,7 +1,7 @@
 ---
 title: Der Auftakt – so ging es am 14. Oktober los
 layout: post
-date: 17. Oktober 2019
+date: 2019-10-17
 author: Kathi Schweiger
 excerpt: Am Montag, dem 14. Oktober durften wir das Projekt OpenBike erstmals den KollegInnen der Stadtverwaltung und unseren ProjektpartnerInnen von ADFC und EBU vorstellen.
 ---
