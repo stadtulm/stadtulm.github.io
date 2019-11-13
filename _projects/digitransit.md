@@ -12,7 +12,7 @@ Multimodales Routing, mit möglichst vielen Mobilitätsangeboten in der Stadt - 
 
 Die Stadt Ulm wurde durch ein ehrenamtliches Projekt im Verschwörhaus auf digitransit aufmerksam. [Digitransit](https://digitransit.fi) ist ein Freies/Open-Source-Software-Projekt aus der Region Helsinki, das verschiedene Freie Softwarekomponenten zu einer intermodalen Mobilitätsauskunft verbindet.
 
-Im Rahmen des Interreg CENTRAL EUROPE Projekts [SHAREPLACE](https://www.ulm.de/leben-in-ulm/digitale-stadt/eu-projekt-shareplace-seit-2017) wird dieses System auf den Ulmer Testfall an. Mit digitransit können neben Bus und Bahn auch neue Mobilitätslösungen wie z.B. Bikesharing integriert werden. Auskunft (und perspektivisch/theoretisch auch Buchung) für verschiedene Angebote werden also auf einem System vereint. 
+Im Rahmen des Interreg CENTRAL EUROPE Projekts [SHAREPLACE](https://www.ulm.de/leben-in-ulm/digitale-stadt/eu-projekt-shareplace-seit-2017) wird dieses System auf den Ulmer Testfall angepasst. Mit digitransit können neben Bus und Bahn auch neue Mobilitätslösungen wie z.B. Bikesharing integriert werden. Auskunft (und perspektivisch/theoretisch auch Buchung) für verschiedene Angebote werden also auf einem System vereint. Teil des Projekts ist es daher auch, passende weitere Datenquellen in und um Ulm zu erschließen, in digitransit zu integrieren und die Datenbereitstellung zu verstetigen.
 
 Für Reisende entsteht ein übersichtliches und transparentes Angebot von verschiedenen im Stadtgebiet existierenden Lösungen. Der Fokus liegt dabei auf *offenen Schnittstellen und offenen Daten*, um mit Blick in die Zukunft die Integration anderer Mobilitätsangebote zu ermöglichen. 
 
