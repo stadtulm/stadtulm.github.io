@@ -9,7 +9,7 @@ Auf dem 36. Chaos Communication Congress des CCC zwischen Weihnachten und Neujah
 
 Nebenan [auf radforschung.org](https://radforschung.org/log/verkehrswende-selber-hacken/) gibt es einen begleitenden Artikel samt allen Quellen, den Vortrag selber gibt es natürlich [auf media.ccc.de in ganzer Länge und auch mit englischer Übersetzung anzusehen](https://media.ccc.de/v/36c3-10881-verkehrswende_selber_hacken).
 
-<iframe width="1024" height="576" src="https://media.ccc.de/v/36c3-10881-verkehrswende_selber_hacken/oembed" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="410" src="https://media.ccc.de/v/36c3-10881-verkehrswende_selber_hacken/oembed" frameborder="0" allowfullscreen></iframe>
 
 *Einschub: Der Vortrag erwähnt die Stadt als Fellowship-Geberin eher subtil – das ist Absicht und so gewollt, [denn die Regeln des Congress](https://content.events.ccc.de/cfp/36c3/checklist.html) sagen ganz klar, dass dies eine nicht-kommerzielle Bühne ist, auf der Marketing für ArbeitgeberInnen nicht akzeptiert ist.*
 
@@ -35,9 +35,13 @@ Der Quellcode, den wir auf dem Camp im Einsatz hatten, ist [selbstverständlich 
 
 Consti hatte eine andere Idee, wie man lange Betriebszeiten mit wenig Energie hinbekommt. Er hat einen eigenen Aufbau auf Basis eines [ESP8266](https://de.wikipedia.org/wiki/ESP8266) getestet, der intervallbasiert die [BSSIDs](https://en.wikipedia.org/wiki/Service_set_(802.11_network)#Basic_service_set_identifier_(BSSID)) umliegender WLAN-Netzwerke erkennt und diese dann ins Backend schickt. Über den offenen [Mozilla Location Service](https://location.services.mozilla.com/) ist dann eine grobe Rückpositionierung möglich – falls genügend Menschen für diesen Ort [Positionierungsdaten](https://wiki.mozilla.org/CloudServices/Location/Software) angelegt haben. Für eine grobe Positionsbestimmung reicht das allemal – denkbar ist natürlich, genau wie bei allen anderen Methoden, die Positionierung über passende [Beacon-Verfahren](https://en.wikipedia.org/wiki/IBeacon) an den festen Abstellstationen noch zu präzisieren, wenn man dafür geeignete Hardware einsetzt.
 
+![](/assets/images/blog/20200113_wifitracker.jpg)
+
 ## Kommerziell erhältliche Tracker
 
 Um schnell Räder auf die Straße zu bringen und Tests fahren zu können, hatten wir zudem einige kommerziell erhältliche GPS-Tracker mit LoRa-Modem gekauft und getestet. Das war hier vor allem der [Dragino LGT92](http://www.dragino.com/products/lora/item/142-lgt-92.html) – der witzigerweise ein ähnliches Feature Set hat wie unser Eigenaufbau aus T-Beams mit Beschleunigungssensor, und dessen Erfassungszyklus auch ähnlich gedacht ist wie das, auf das wir mit den T-Beams kamen. 
+
+![](/assets/images/blog/20200113_lgtbox.jpg)
 
 Zum Testen reichen die Geräte ganz passabel aus; an den Fahrrädern haben wir sie in Feuchtraum-Abzweigdosen mit Schellen aus dem Baumarkt befestigt. Ein Tracker kostet bei den üblichen Einkaufsplattformen rund 40 €.
 
@@ -55,4 +59,4 @@ Im Testaufbau hat das alles auch schon sehr gut funktioniert. Im Tiefschlaf brau
 
 ## Selber mitentwickeln
 
-Wir möchten als Freie Soft- und Hardware entwickeln – und dazu gehört auf jeden Fall, auch anderen den Einstieg in die Mitentwicklung zu erleichtern. Sobald wir die ersten prototypenfähigen PCB-Designs haben, landen die natürlich auf Github. Und wir möchten interessierte Hackspaces auch gerne Platinen aus der ersten Serie zum selbst belöten zuschicken, sobald sie gefertigt sind. Mehr dazu folgt hier, sobald es soweit ist!
+Wir möchten als Freie Soft- und Hardware entwickeln – und dazu gehört auf jeden Fall, auch anderen den Einstieg in die Mitentwicklung zu erleichtern. Sobald wir die ersten prototypenfähigen PCB-Designs haben, landen die natürlich [auf Github](https://github.com/stadtulm). Und wir möchten interessierte Hackspaces auch gerne Platinen aus der ersten Serie zum selbst belöten zuschicken, sobald sie gefertigt sind. Mehr dazu folgt hier, sobald es soweit ist!
