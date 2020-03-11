@@ -21,6 +21,15 @@ Im Projekt Openbike entwickelt die Stadt Ulm eine Freie/Open-Source-Software (F/
 
 Verbesserungen direkt am Code der Softwarekomponenten sind auch sehr gern gesehen: [cykel (Backend)](https://github.com/stadtulm/cykel) und [voorwiel (Frontend)](https://github.com/stadtulm/voorwiel), sowie weitere [Einzelservices im GitHub-Account](https://github.com/stadtulm).
 
+
+## Überblicksvideo
+
+<video controls width="100%" poster="/assets/media/openbike-intro.jpg">
+  <source type="video/webm" src="/assets/media/openbike-intro.webm">
+  <source type="video/mp4" src="/assets/media/openbike-intro.mp4">
+</video>
+
+
 ## Förderung
 
 Die Förderung durch das Verkehrsministerium erfolgt im Rahmen der Förderlinie Mobilitätsdatenarchitektur für innovative Anwendungen ([MobiArchBW](https://vm.baden-wuerttemberg.de/de/service/presse/pressemitteilung/pid/verkehrsministerium-foerdert-innovative-nutzung-von-mobilitaetsdaten-zur-verkehrssteuerung-und-entla/)). "Alle Projekte verfolgen innovative Ansätze in den verschiedensten Bereichen der Mobilität", sagte Minister Hermann beim Auftakt in Ulm. "Eines eint jedoch alle Projekte: Der Beitrag zu einer nachhaltigeren Mobilität und der Open Data Gedanke. Denn Datenverfügbarkeit ist eine Grundvoraussetzung für digitale Mobilität."
