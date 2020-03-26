@@ -2,6 +2,12 @@
 
 This website is based on the [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) [Jekyll theme](https://jekyllrb.com/docs/themes/).
 
+Building and deployment is handled by the ulm.dev CI. Look into [the GitHub Environments Tab](https://github.com/stadtulm/ulm.dev/deployments) and the build status on the commits for status, messages and a history.
+
+The original readme of the jekyll theme follows below:
+
+----
+
 This project assumes that you are comfortable editing source code. If you prefer to launch a website without editing any source code, checkout [uswds-jekyll](https://github.com/18F/uswds-jekyll), which allows you to change the layout and content with configuration files.
 
 This project strives to be compliant with requirements set by [21st Century IDEA Act](https://www.meritalk.com/articles/senate-passes-idea-act/). The standards require that a website or digital service:
