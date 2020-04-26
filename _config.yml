@@ -23,7 +23,7 @@ email:  hallo@ulm.dev
 description: >- # this means to ignore newlines until "baseurl:"
   ulm.dev: build things, create stuff inside the city of ulm.
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://example.gov" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ulm.dev" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Twitter handle. Only the handle, not the URL.
 twitter: stadtulm
