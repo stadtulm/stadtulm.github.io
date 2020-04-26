@@ -32,7 +32,7 @@ Das erste Setup war recht schnell installiert. Es handelt sich um eine kleine [P
 
 Installiert wurde die Maschine mit dem [bbb-install](https://github.com/bigbluebutton/bbb-install)-Script auf Ubuntu 16.04 LTS – ja, BBB funktioniert derzeit offiziell exakt nur auf dieser veralteten Version, was Folgeprobleme z.B. mit Python-Versionen nach sich zieht. Dazu später mehr.
 
-Wichtig beim Rollout ist auch, die _Möglichkeit_ zur Aufzeichnung von Sessions von vorneherein zu deaktivieren. Tatsächlich [finden nämlich standardmäßig Aufzeichnungen aller Sessions statt](https://github.com/bigbluebutton/bigbluebutton/issues/92029), und der Recording-Knopf setzt hier nur Schnittmarken und startet nach Ende der Session eine Nachbearbeitungspipeline. Das von vorneherein zu deaktivieren schafft bessere DSGVO-Compliance und schützt auch vor vollaufenden Platten.
+Wichtig beim Rollout ist auch, die _Möglichkeit_ zur Aufzeichnung von Sessions von vorneherein zu deaktivieren. Tatsächlich [finden nämlich standardmäßig Aufzeichnungen aller Sessions statt](https://github.com/bigbluebutton/bigbluebutton/issues/9202), und der Recording-Knopf setzt hier nur Schnittmarken und startet nach Ende der Session eine Nachbearbeitungspipeline. Das von vorneherein zu deaktivieren schafft bessere DSGVO-Compliance und schützt auch vor vollaufenden Platten.
 
 ### TURN und STUN zur Firewalldurchbohrung
 
