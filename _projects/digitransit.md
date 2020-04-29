@@ -8,7 +8,7 @@ image_alt: Benutzeroberfläche von digitransit
 
 Multimodales Routing, mit möglichst vielen Mobilitätsangeboten in der Stadt - basierend auf offenen Daten und als Teil einer [weltweiten Entwickelndencommunity](https://github.com/hsldevcom/digitransit-ui).
 
-<a class="usa-button" href="https://digitransit.im.verschwoerhaus.de">Digitransit besuchen</a>
+<a class="usa-button" href="https://digitransit.ulm.dev">Digitransit besuchen</a>
 
 Die Stadt Ulm wurde durch ein ehrenamtliches Projekt im Verschwörhaus auf digitransit aufmerksam. [Digitransit](https://digitransit.fi) ist ein Freies/Open-Source-Software-Projekt aus der Region Helsinki, das verschiedene Freie Softwarekomponenten zu einer intermodalen Mobilitätsauskunft verbindet.
 
