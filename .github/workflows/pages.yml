@@ -1,0 +1,25 @@
+name: build and deploy to gh pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll \
+        -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        timbru31/ruby-node:2.5 \
+        /bin/bash -c "chmod -R 777 /srv/jekyll; cd /srv/jekyll; npm ci && npm run build"
+
+    - name: Deploy to GitHub Pages
+      uses: crazy-max/ghaction-github-pages@v2.5.0
+      with:
+        keep_history: true
+        build_dir: _site
+        jekyll: false
