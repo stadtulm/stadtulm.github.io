@@ -1,0 +1,255 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <!-- Basic Page Needs
+    ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Mobile Specific Metas
+    ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title and meta description
+    ================================================== -->
+  <title>ulm.dev</title>
+  <meta property="og:title" content="ulm.dev">
+  <meta name="description" content="ulm.dev: build things, create stuff inside the city of ulm.">
+  <meta property="og:description" content="ulm.dev: build things, create stuff inside the city of ulm.">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ulm_donau" />
+  <meta name="twitter:title" content="ulm.dev" />
+  <meta name="twitter:description" content="ulm.dev: build things, create stuff inside the city of ulm." />
+
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="/">
+  <meta property="og:url" content="/">
+  <!-- Favicons
+    ================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/assets/images/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/images/favicons/favicon.png">
+  <!-- 192x192, as recommended for Android
+    http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+    -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicons/android-chrome-192x192.png">
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/favicon-144.png">
+  <!-- CSS
+    ================================================== -->
+  <!-- env: demo -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="page-landing-page layout-demo ">
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+  <div class="usa-overlay"></div>
+
+
+<header class="usa-header usa-header--basic" role="banner">
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+      <div class="usa-logo" id="extended-logo">
+        <a href="/" title="Home" aria-label="Home">
+          <img class="logo-img" src="/assets/images/logo.png" alt="ulm">
+          <em class="usa-logo__text">ulm.dev</em>
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+    <nav role="navigation" class="usa-nav">
+      <button class="usa-nav__close"><img src="/assets/uswds/img/close.svg" alt="close"></button>
+      <ul class="usa-nav__primary usa-accordion">
+        
+        
+        
+        
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="/"><span>Home</span></a>
+        </li>
+        
+        
+        
+        
+        <li class="usa-nav__primary-item">
+          <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="primary-nav-2"><span>Projekte</span></button>
+          <ul id="primary-nav-2" class="usa-nav__submenu">
+            
+            <li class="usa-nav__submenu-item">
+              <a href="/projects/openbike/">OpenBike</a>
+            </li>
+            
+            <li class="usa-nav__submenu-item">
+              <a href="/projects/digitransit/">digitransit</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        
+        
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="/blog/"><span>Blog</span></a>
+        </li>
+        
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="usa-layout-docs usa-section" id="main-content">
+  <div class="grid-container">
+    
+
+
+<div class="grid-row grid-gap">
+  <div class="desktop:grid-col-8 usa-prose padding-right-4">
+    <h1 class="title">LoraWAN GPS-Tracker konfigurieren</h1>
+    <div class="text-base margin-bottom-2">
+        <div class="margin-top-neg-105">
+          von <span class="text-bold">Constantin Müller, Maximilian Richt, Stefan Kaufmann</span> · 25. September 2020
+        </div>
+    </div>
+    <div>
+    	<p>Neben den <a href="https://ulm.dev/2020/04/24/wifi-tracker-bauanleitung/">Wifi-Trackern</a> benutzen wir als GPS-Tracker hauptsächlich die LoRaWAN GPS-Tracker <a href="https://www.dragino.com/products/lora/item/142-lgt-92.html">Dragino LGT 92</a> in der Ausführung mit eingebautem Akku. Zwar testen wir auch andere Trackermodelle, möchten aber in diesem Artikel kurz beschreiben, wie wir die Tracker konfiguriert haben. Der Vorteil dieser Tracker ist, dass sie als fertiges Produkt gekauft werden können, aber trotzdem komplett <a href="https://de.wikipedia.org/wiki/Open-Source-Hardware">Open Hardware</a> sind und die Firmware als Freie/Open-Source-Software veröffentlicht wird. Die Annahme von <a href="https://github.com/dragino/LGT-92_-LoRa_GPS_Tracker/pulls">Bugfixes auf GitHub</a> scheint aber noch nicht so gut zu funktionieren. Der große Vorteil, dass man die Firmware selber anpassen und auch Firmwareupdates selbstständig einspielen kann, bleibt natürlich bestehen. Und das ist bei solchen Geräten nicht selbstverständlich, wie wir bei Experimenten mit Trackern anderer Hersteller schmerzlich feststellen mussten.</p>
+
+<p>Wir möchten in diesem Artikel festhalten wie wir unsere Tracker konfiguriert haben. Die Konfiguration findet, wie in der <a href="http://www.dragino.com/downloads/downloads/LGT_92/LGT-92_LoRa_GPS_Tracker_UserManual_v1.5.5.pdf">Anleitung ab Seite 20</a> beschrieben mit AT-Kommandos über die serielle Konsole statt.</p>
+
+<p>Eine Liste aller AT-Kommandos findet sich in der <a href="http://www.dragino.com/downloads/downloads/LGT_92/DRAGINO_LGT92_AT_Commands_v1.5.3.pdf">AT-Anleitung des Herstellers</a>. Hier solltet ihr überprüfen ob die Firmware auf dem Stand der Dokumentation ist, und diese im zweifel aktualisieren.</p>
+
+<h2 id="akkulaufzeit-optimieren">Akkulaufzeit optimieren</h2>
+
+<p><img src="/assets/images/blog/20200925_tracker-laden.jpg" alt="Dragino Tracker beim Laden" /></p>
+
+<p>Da GPS sehr stromhungrig ist, bieten die Tracker eine Reihe von Konfigurationsmöglichkeiten um für verschiedene Anwendungsfälle die bestmögliche Laufzeit herauszuholen. Wichtigster Punkt: Wie oft wird der GPS-Chip gestartet um die Position zu erfassen.</p>
+
+<p>Das Gute an den Dragino-Trackern ist, dass diese einen Beschleunigungssensor eingebaut haben und ab Firmwareversion 1.5 lässt der Tracker so konfigurieren, dass dieser uns beim Stromsparen sehr hilft: Unsere Räder stehen die meiste Zeit des Tages ja an einem Fahrradständer. Solange sie stehen brauchen wir keine regelmäßigen Positionsupdates im System. (Vielleicht alle paar Stunden mal, um sicher zu gehen, dass das Rad noch dort steht und kein Lora-Paket zwischendurch verloren gegangen ist.) Mit dem Beschleunigungssensor kann der Tracker erfassen, wann das Rad bewegt wird, und dann anfangen seine Position häufiger zu senden.</p>
+
+<p>Mit <code class="highlighter-rouge">AT+TDC</code> kann man konfigurieren, in welchem Intervall in <em>Milli</em>sekunden der Tracker seine Position sendet, wenn er bewegt wird. Und mit <code class="highlighter-rouge">AT+KAT</code> den Abstand zwischen Aussendungen in <em>Milli</em>sekunden, solange keine Bewegung registriert wurde. Momentan nutzen wir die Werte <code class="highlighter-rouge">AT+TDC=90000</code> und <code class="highlighter-rouge">AT+KAT=1800000</code>. <code class="highlighter-rouge">AT+KAT</code> ist bei uns mit 30 Minuten sehr gering eingestellt, da wir das Feature mit der neuen Firmware erst einmal testen wollten. Wahrscheinlich ist es aber sinnvoll, diesen Wert auf drei Stunden erhöhen. <code class="highlighter-rouge">AT+TDC</code> ist bei uns mit 90 Sekunden auch relativ gering, weil wir überlegen in Zukunft <a href="https://radforschung.org/log/mds-fuer-kommunen-erklaert/">MDS-Daten</a> zu generieren.</p>
+
+<p>Ein Zweiter, für die Akkulaufzeit relevanter Faktor ist, wie lange der GPS-Chip versucht, eine Position zu ermitteln. Sucht dieser nicht lang genug nach Satelliten, ist die Genauigkeit der Position möglicherweise sehr schlecht. Stehen Fahrzeuge öfter unter Brücken, unter Dächern oder an sonstigen Orten mit schlechtem GPS-Empfang, verbraucht der GPS-Chip bei zu langer erfolgloser Suche sehr viel Strom. Diese Zeit lässt sich mit <code class="highlighter-rouge">AT+FTIME</code> konfigurieren. (Wert in Sekunden, in unserem Fall <code class="highlighter-rouge">AT+FTIME=180</code>)
+Damit im Zusammenhang steht auch die konfigurierbare Mindestgenauigkeit. Das heißt, wir können konfigurieren, ab welcher Genauigkeit sich der Tracker mit der Position zufrieden gibt und diese sendet. Da der Empfänger für eine genauere Position länger braucht und damit mehr Strom verbraucht, müssen wir hier also ein gutes Verhältnis zwischen Genauigkeit und Akkulaufzeit finden. Dies kann sich je nach Anwendungsfall unterscheiden. Nach unserer Erfahrung ist die vorkonfigurierte Genauigkeit von <code class="highlighter-rouge">AT+PDOP=3.00</code> teilweise erschreckend ungenau. Unsere Tracker sind mit <code class="highlighter-rouge">AT+PDOP=2.00</code> konfiguriert. Bei <a href="https://de.wikipedia.org/wiki/Dilution_of_Precision">DOP</a> handelt es sich nicht um eine Genauigkeit in Metern, sondern um eine dimensionslose Maßzahl für die Streuung der erfassten Positionswerte. Wenn die Genauigkeit <code class="highlighter-rouge">AT+PDOP</code> in der Erfassungszeit <code class="highlighter-rouge">AT+FTIME</code> nicht erreicht wurde, wird die bis dahin am genausten erfasste Position gesendet. <code class="highlighter-rouge">AT+PDOP</code> und <code class="highlighter-rouge">AT+FTIME</code> stehen hier also in einer gewissen Abhänigkeit zueinander - wir haben unser Optimum dabei auch noch nicht gefunden.</p>
+
+<p>Ein Problem mit der aktuellen Firmware ist, dass leider die <a href="https://github.com/dragino/LGT-92_-LoRa_GPS_Tracker/issues/13">Genauigkeit der GPS-Position nicht mit per Lora übermittelt wird</a>. Andere GPS-Chips in neueren Hardwarerevisionen könnten sich anders verhalten. Wir haben Tracker in der Hardware-Version 1.4 mit dem Quectel L70-RL GPS-Chip. Es gibt wohl auch eine Nachfolgegeneration auf dem ein anderer GPS-Chip verbaut ist.</p>
+
+<h2 id="reichweitenoptimierungen">Reichweitenoptimierungen</h2>
+
+<p>Für Orte die nicht so gut mit LoRaWAN abgedeckt sind, gibt es zwei relevante Einstellungen.</p>
+
+<h3 id="datenrate">Datenrate</h3>
+
+<p><img src="/assets/images/blog/20200925_datarte-calcultaor.png" alt="Datarate Calculator" /></p>
+
+<p>Die Datenrate (oder auch Spreading Factor): LoRaWAN-Nodes können ihre Daten in verschiedenen Geschwindigkeiten senden. Um so langsamer die Daten gesendet werden, um so höher ist die Wahrscheinlichkeit, dass das Gateway zwischen vielen Störfaktoren das gesendete Signal noch herausfiltern kann. Dementsprechend steigt mit niedrigerer Datenrate (höherem Spreadingfactor) also auch in der Regel die Reichweite des Signals. Allerdings ist dabei zu beachten, dass wir uns das Übertragungsmedium mit allen anderen LoRa-Geräten und noch vielen anderen Sendern teilen, die diese offene Frequenz benutzen. Das heißt, um so länger wir senden, um so länger beeinträchtigen wir die Frequenz für alle anderen Teilnehmenden. Neben den rechtlichen Regelungen, die aus diesem Grund die Bundesnetzagentur getroffen hat, gibt es auch noch <a href="https://www.thethingsnetwork.org/forum/t/limitations-data-rate-packet-size-30-seconds-uplink-and-10-messages-downlink-per-day-fair-access-policy-guidelines/1300">restriktivere Beschränkungen, die sich die TTN-Community selbst auferlegt hat</a>. Das soll dafür sorgen, möglichst vielen Geräten die Teilnahme am Netzwerk zu ermöglichen. In der Praxis bedeutet dies: Es gibt einen Richtwert, wie lange jedes Gerät pro Tag maximal senden sollte. Wie viele Daten das sind, wie oft ein GPS-Tracker also seine Daten übermitteln kann, hängt dementsprechend auch mit der Datenrate zusammen.</p>
+
+<p>Um auszurechnen, wie häufig der Dragino-Tracker bei welcher Datenrate senden darf, gibt es diesen großartigen Rechner: <a href="https://avbentem.github.io/airtime-calculator/ttn/eu868">https://avbentem.github.io/airtime-calculator/ttn/eu868</a>. Hier sehen wir, dass die Tracker bei einer Payload-Größe von 21 Byte und der voreingestellten Datenrate (DR5 / SF7) 16 mal pro Stunde, also etwa alle 4 Minuten, ihre Position senden könnten. Damit stoßen wir an keine realen Grenzen, denn schon allein aus Akkulaufzeitgründen  ist es nicht sinnvoll dauerhaft so oft die Position zu übermitteln.
+Selbst bei der niedrigsten festeinstellbaren Datenrate (DR2/SF10) dürfen wir noch mehr als zwei Geolocations pro Stunde senden, was in gut ausgelasteten System in denen die Räder mehrere Fahrten pro Tag machen noch deutlich ausreicht, da die Fahrräder sich ja trotzdem die meiste Zeit nicht bewegen.</p>
+
+<p>Mit dem AT-Kommando <code class="highlighter-rouge">AT+DR=4</code> kann man somit die Datenrate auf 4 setzen, was dem Spreadingfaktor 8 entspricht. DR1 und DR2 dürfen nur benutzt werden, wenn <a href="https://www.thethingsnetwork.org/docs/lorawan/adaptive-data-rate.html">ADR (Adaptive Data Rate)</a> aktiviert ist, was in unserem Anwendungsfall eher wenig praktikabel ist.</p>
+
+<h3 id="single-channel-gateways">Single Channel Gateways</h3>
+
+<p><img src="/assets/images/blog/20200925_selbstbau-single-channel-gateway.jpg" alt="Selbstbau Single-Channel-Gateway aus der gleichen Hardware, die wir auch für unsere Wifi-Tracker verwenden" /></p>
+
+<p>LoRaWAN benutzt im Normalfall 8 Unterfreuqenzen (Channels/Kanäle). Dies dient dazu das geteilte Frequenzband besser auszunutzen. Das heißt auch, dass standardkonforme Gateways auch gleichzeitig auf alle 8 Kanäle hören sollten, um alle gesendeten Nachrichten empfangen zu können. Die Clients wählen sich zufällig einen Kanal, um das Band möglichst gleichmäßig auszunutzen.</p>
+
+<p>Solche vollwertige Gateways sind nicht für alle einfach erschwinglich, auch wenn der Preis für manche Geräte mittlerweile auf unter 100€ gefallen ist. Deswegen existieren Bauanleitungen für Selbstbau-Gateways, die nur auf einem Kanal empfangen und senden. An Orten ohne systematisch aufgebaute TTN-Infrastruktur sind dies womöglich die ersten und einzigen verfügbaren Gateways, oder auch im eigenen Arbeitszimmer für Experimente.<br />
+Da diese Gateways im Durchschnitt aber nur jede achte Nachricht überhaupt empfangen, kann der Effekt solch eines Single-Channel-Gateways erst mal sehr enttäuschend sein. Um temporär Abhilfe zu schaffen, können die Dragino-Tracker in den Single-Channel-Mode versetzt werden. Wenn man die eingesetzte Frequenz des Single-Channel-Gateways kennt, kann der Tracker dann mit z.B. <code class="highlighter-rouge">AT+CHS=868100000</code> auf diese Frequenz festgesetzt werden. Das Problem ist, dass dadurch die vorhin angesprochene gleichmäßige Verteilung von Aussendungen auf alle Channels unterwandert wird. Deswegen sollte der Tracker wieder in den Multi-Channel-Mode gesetzt werden (<code class="highlighter-rouge">AT+CHS=0</code>), sobald er in einem „richtigen“ TTN-Netz mit ausreichend vielen standardkonformen Gateways eingesetzt wird.</p>
+
+    </div>
+  </div>
+  <aside class="desktop:grid-col-fill margin-top-4 padding-right-4">
+      <div class="border-top-1 border-accent-cool-darker padding-top-2 margin-bottom-4 usa-prose">
+        <h4 class="">Neuste Beiträge</h4>
+        <ul class="usa-list usa-list--unstyled padding-top-2">
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/09/25/lora-tracker-konfigurieren/">LoraWAN GPS-Tracker konfigurieren</a></li>
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/07/07/openbike_rueckgabe_benachrichtigungen_auth/">Gedanken zur Fahrradrückgabe, Benachrichtigungen und Authentifizierung</a></li>
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/06/30/minikonferenz/">Save the date: Eine kleine OpenBike-Konferenz</a></li>
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/06/25/openbike-qa-1-kurzbericht/">OpenBike Q&A, ein nachgereichter Blogpost</a></li>
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/05/20/openbike-qa-1/">OpenBike Q&A, Heute, 19:00</a></li>
+          
+        </ul>
+      </div>
+      <div class="border-top-1 border-accent-cool-darker padding-top-2 margin-bottom-4 usa-prose">
+        <h4>Links</h4>
+        <ul class="usa-list usa-list--unstyled padding-top-2">
+          <li class="padding-bottom-1">
+            <svg style="vertical-align: middle;" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 text-primary width-2 margin-right-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+              <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+            </svg>
+            <a class="usa-link" href="https://github.com/stadtulm">Github</a>
+          </li>
+          <li class="padding-bottom-1">
+            <svg style="vertical-align: middle;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="rss" class="svg-inline--fa fa-rss fa-w-14 text-primary width-2 margin-right-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path>
+            </svg>
+            <a class="usa-link" href="/feed.xml">RSS Feed</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+</div>
+
+
+  </div>
+</main>
+
+<footer class="usa-footer site-footer" role="contentinfo">
+  <div class="footer-section-bottom bg-base-lighter">
+    <div class="grid-container">
+      <div class="grid-row padding-3">
+        <div class="tablet:grid-col" >
+          <div class="logo-links">
+            <a class="footer-logo media_link" href="https://www.ulm.de/leben-in-ulm/digitale-stadt">
+              <img src="/assets/images/zda-logo.svg" width="100" alt="Stadt Ulm, Z/DA" />
+            </a>
+          </div>
+        </div>
+        <div class="tablet:grid-col"></div>
+        <div class="tablet:grid-col">
+          <ul class="add-list-reset">
+            <li><a href="https://www.ulm.de/leben-in-ulm/digitale-stadt">Digitale Agenda</a></li>
+            <li><a href="https://github.com/stadtulm">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col">
+          <ul class="add-list-reset">
+            <li><a href="https://www.ulm.de/sonderseiten/datenschutzerklaerung">Datenschutz</a></li>
+            <li><a href="https://www.ulm.de/sonderseiten/impressum">Impressum</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/uswds/js/uswds.min.js"></script>
+
+</body>
+</html>

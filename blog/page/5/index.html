@@ -1,0 +1,359 @@
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <!-- Basic Page Needs
+    ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Mobile Specific Metas
+    ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title and meta description
+    ================================================== -->
+  <title>ulm.dev</title>
+  <meta property="og:title" content="ulm.dev">
+  <meta name="description" content="ulm.dev: build things, create stuff inside the city of ulm.">
+  <meta property="og:description" content="ulm.dev: build things, create stuff inside the city of ulm.">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ulm_donau" />
+  <meta name="twitter:title" content="ulm.dev" />
+  <meta name="twitter:description" content="ulm.dev: build things, create stuff inside the city of ulm." />
+
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="/">
+  <meta property="og:url" content="/">
+  <!-- Favicons
+    ================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/assets/images/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/images/favicons/favicon.png">
+  <!-- 192x192, as recommended for Android
+    http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+    -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicons/android-chrome-192x192.png">
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/favicon-144.png">
+  <!-- CSS
+    ================================================== -->
+  <!-- env: demo -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="page-landing-page layout-demo ">
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+  <div class="usa-overlay"></div>
+
+
+<header class="usa-header usa-header--basic" role="banner">
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+      <div class="usa-logo" id="extended-logo">
+        <a href="/" title="Home" aria-label="Home">
+          <img class="logo-img" src="/assets/images/logo.png" alt="ulm">
+          <em class="usa-logo__text">ulm.dev</em>
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+    <nav role="navigation" class="usa-nav">
+      <button class="usa-nav__close"><img src="/assets/uswds/img/close.svg" alt="close"></button>
+      <ul class="usa-nav__primary usa-accordion">
+        
+        
+        
+        
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="/"><span>Home</span></a>
+        </li>
+        
+        
+        
+        
+        <li class="usa-nav__primary-item">
+          <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="primary-nav-2"><span>Projekte</span></button>
+          <ul id="primary-nav-2" class="usa-nav__submenu">
+            
+            <li class="usa-nav__submenu-item">
+              <a href="/projects/openbike/">OpenBike</a>
+            </li>
+            
+            <li class="usa-nav__submenu-item">
+              <a href="/projects/digitransit/">digitransit</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        
+        
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link usa-current" href="/blog/"><span>Blog</span></a>
+        </li>
+        
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <div id="blog" class="bg-primary-darker usa-content font-serif-lg padding-y-6">
+  <div class="grid-container">
+    <h1 class="text-normal text-white margin-0">Blog</h1>
+  </div>
+</div>
+<div class="grid-container">
+  <div class="grid-row">
+    <div class="desktop:grid-col-8 usa-prose padding-right-4">
+      <!-- This loops through the paginated posts -->
+      
+      <div class="padding-bottom-4 margin-top-4 margin-bottom-8 usa-prose border-bottom-05 border-base-lightest">
+        <h3 class="title"><a class="usa-link text-no-underline" href="/2020/01/17/pfaedle/">Make them trip patterns bendy instead of spiky</a></h3>
+        <div class="text-base margin-bottom-2">
+          <div class="margin-top-neg-105">
+            von <span class="text-bold">Stefan Kaufmann</span> · 17. Januar 2020
+          </div>
+        </div>
+        <div>
+          
+          <p>Once you deploy digitransit with your GTFS feeds, you might encounter spiky trip shapes that don’t follow street geometry. Here is how to fix this.</p>
+
+<p><img src="/assets/images/blog/20200117_pfaedle.png" alt="" /></p>
+
+<p>Fellow developer Vlatko from the City of Osijek sent us this screenshot. The bus appears to just bulldoze through buildings, not following any street geometries at all.</p>
+
+<p>What happens here is the following. GTFS has a separate file called <a href="https://developers.google.com/transit/gtfs/reference#shapestxt"><code class="highlighter-rouge">shapes.txt</code></a> that defines shape geometries for trip patterns. Within <a href="https://developers.google.com/transit/gtfs/reference#tripstxt"><code class="highlighter-rouge">trips.txt</code></a>, individual trips can reference a <code class="highlighter-rouge">shape_id</code> they adhere to.</p>
+
+<p>If this <code class="highlighter-rouge">shapes.txt</code> is not defined within your GTFS feed (and many feeds do not provide shapes right now), digitransit/OpenTripPlanner will only display the linear distance between individual stop points – regardless of the actual route the trip should take.</p>
+
+<h2 id="how-to-mitigate-this">How to mitigate this</h2>
+
+<p>There are several approaches to retroactively add shapes to your existing GTFS feed. We have tried two variants and can recommend them both:</p>
+
+<h3 id="conveyal-transit-data-tools">Conveyal Transit Data Tools</h3>
+
+<p><a href="https://conveyal-data-tools.readthedocs.io/en/latest/">This is a complete software suite</a> you can access through your browser in order to edit, reconfigure or even build your GTFS feed from scratch. Good for getting a first feel for your feeds and analyzing them.</p>
+
+<h3 id="pfaedle">pfaedle</h3>
+
+<p><a href="https://github.com/ad-freiburg/pfaedle">pfaedle</a> is a command line tool by Patrick Brosi that matches GTFS feeds to OpenStreetMap relations very precisely. This might take a bit longer to set up initially and adapt to your needs, but once it runs it should save you time in the long run.</p>
+
+          
+        </div>
+      </div>
+      
+      <div class="padding-bottom-4 margin-top-4 margin-bottom-8 usa-prose border-bottom-05 border-base-lightest">
+        <h3 class="title"><a class="usa-link text-no-underline" href="/2020/01/13/trackinghardware/">Wie funktioniert eigentlich das mit den Fahrradtrackern?</a></h3>
+        <div class="text-base margin-bottom-2">
+          <div class="margin-top-neg-105">
+            von <span class="text-bold">Stefan Kaufmann</span> · 13. Januar 2020
+          </div>
+        </div>
+        <div>
+          
+          <p>Auf dem 36. Chaos Communication Congress des CCC zwischen Weihnachten und Neujahr gab es einige Ulmer Beteiligung – und unter anderem auch einen Vortrag von unseren Stadtverwaltungs-Fellows Consti und Max, <a href="https://www.heise.de/newsticker/meldung/36C3-Die-Verkehrswende-selber-hacken-4624862.html">der es auch bis Heise Online geschafft hat</a>.</p>
+
+<p>Nebenan <a href="https://radforschung.org/log/verkehrswende-selber-hacken/">auf radforschung.org</a> gibt es einen begleitenden Artikel samt allen Quellen, den Vortrag selber gibt es natürlich <a href="https://media.ccc.de/v/36c3-10881-verkehrswende_selber_hacken">auf media.ccc.de in ganzer Länge und auch mit englischer Übersetzung anzusehen</a>.</p>
+
+<iframe width="100%" height="410" src="https://media.ccc.de/v/36c3-10881-verkehrswende_selber_hacken/oembed" frameborder="0" allowfullscreen=""></iframe>
+
+<p><em>Einschub: Der Vortrag erwähnt die Stadt als Fellowship-Geberin eher subtil – das ist Absicht und so gewollt, <a href="https://content.events.ccc.de/cfp/36c3/checklist.html">denn die Regeln des Congress</a> sagen ganz klar, dass dies eine nicht-kommerzielle Bühne ist, auf der Marketing für ArbeitgeberInnen nicht akzeptiert ist.</em></p>
+
+<p>Im Nachgang gab es daraufhin viel viel Feedback, Tipps und Fragen. Und eine der meist gestellten Fragen war, wie denn die Positionsübermittlung der Fahrräder derzeit funktioniert. Deswegen hier mal ein Aufschrieb dazu.</p>
+
+<h2 id="wie-die-daten-überhaupt-übertragen-werden">Wie die Daten überhaupt übertragen werden</h2>
+
+<p>Eine grundlegende Annahme für uns ist <em>derzeit</em>, dass wir uns nicht auf klassische SIM-Kartenbasierte <a href="https://de.wikipedia.org/wiki/Machine_to_Machine">M2M</a>-Kommunikationsstrukturen verlassen wollen – also irgendwas, was klassische Mobilfunkbetreiber anbieten.</p>
+
+<p>In Ulm gibt es bereits seit Ende 2016 <a href="https://lora.ulm-digital.com/">ein gut ausgebautes LoRaWAN-Netzwerk</a> auf Basis des freien <a href="https://lora.ulm-digital.com/">The Things Network</a>. Das ermöglicht uns, ohne laufende Subskriptionskosten kleine Datenmengen zu übertragen und zu experimentieren. Ein Nachteil muss aber erwähnt werden: Das Grundprinzip des Netzwerks ist, dass vorwiegend Daten von den Endgeräten zu den fest installierten Gateways übertragen werden. Die Rückrichtung von der Infrastruktur zu den Endgeräten ist eigentlich mehr die Ausnahme, und sie funktioniert auch nur unter gewissen Voraussetzungen.</p>
+
+<p>Das ist aber im derzeitigen Projektstadium nur mäßig projektkritisch – und es spricht auch nichts dagegen, gegebenenfalls in einem anderen Setting auch M2M-SIM-basierte Geräte einzusetzen.</p>
+
+<h2 id="vom-mvp-zur-eigenen-hardware--oder-alles-mal-probieren">Vom MVP zur eigenen Hardware – oder, alles mal probieren</h2>
+
+<p>Der aktuelle Stand ist, überhaupt Positionierungsdaten ins Backend zu übertragen. Beim <a href="https://radforschung.org/log/cccamp19-review/">Feldversuch auf dem Chaos Communication Camp</a> im Sommer 2019 passierte das mit <a href="https://tinymicros.com/wiki/TTGO_T-Beam">TTGO T-Beam</a> Development Boards. Das sind für ca. 20 EUR pro Stück aus Fernost bestellbare Entwicklungsplatinen, auf denen ein programmierbarer <a href="https://de.wikipedia.org/wiki/ESP32">ESP32-Controller</a>, ein halbwegs passables GPS-Modul und ein LoRaWAN-Modem (<a href="https://www.hoperf.com/modules/lora/RFM95.html">RFM95W</a>) gemeinsam verbaut sind. Und weil auf der Platine auch gleich eine Lade- und Entladeregelung sowie eine Halterung für eine <a href="https://de.wikipedia.org/wiki/Lithium-Ionen-Akkumulator#Bauformen">18650</a>-Akkuzelle dabei sind, ist das praktisch eine alles-in-einem-Lösung, die wir einfach so an die Fahrräder binden und benutzen konnten.</p>
+
+<p>Naja, jedenfalls fast: Selbst wenn das Gerät nur alle 10 Minuten aufwacht, um die Position zu bestimmen, brauchen die Platinen auch im Deep-Sleep-Modus vergleichsweise sehr viel Energie. Die Akkus waren indes meist nach gut 30 Stunden komplett leer und mussten regelmäßig getauscht werden. Für den Praxiseinsatz ist das natürlich so gar nicht tauglich.</p>
+
+<p>Der Quellcode, den wir auf dem Camp im Einsatz hatten, ist <a href="https://github.com/radforschung/Lora-TTNMapper-T-Beam">selbstverständlich auf Github verfügbar</a>. Wie man dort erkennen kann, hatten wir auch mit günstigen Beschleunigungssensoren MPU9250 experimentiert, die das System aufwecken, wenn am abgestellten Fahrrad gewackelt wird.</p>
+
+<h2 id="positionierung-auf-wlan-basis">Positionierung auf WLAN-Basis</h2>
+
+<p>Consti hatte eine andere Idee, wie man lange Betriebszeiten mit wenig Energie hinbekommt. Er hat einen eigenen Aufbau auf Basis eines <a href="https://de.wikipedia.org/wiki/ESP8266">ESP8266</a> getestet, der intervallbasiert die <a href="https://en.wikipedia.org/wiki/Service_set_(802.11_network)#Basic_service_set_identifier_(BSSID)">BSSIDs</a> umliegender WLAN-Netzwerke erkennt und diese dann ins Backend schickt. Über den offenen <a href="https://location.services.mozilla.com/">Mozilla Location Service</a> ist dann eine grobe Rückpositionierung möglich – falls genügend Menschen für diesen Ort <a href="https://wiki.mozilla.org/CloudServices/Location/Software">Positionierungsdaten</a> angelegt haben. Für eine grobe Positionsbestimmung reicht das allemal – denkbar ist natürlich, genau wie bei allen anderen Methoden, die Positionierung über passende <a href="https://en.wikipedia.org/wiki/IBeacon">Beacon-Verfahren</a> an den festen Abstellstationen noch zu präzisieren, wenn man dafür geeignete Hardware einsetzt.</p>
+
+<p><img src="/assets/images/blog/20200113_wifitracker.jpg" alt="" /></p>
+
+<h2 id="kommerziell-erhältliche-tracker">Kommerziell erhältliche Tracker</h2>
+
+<p>Um schnell Räder auf die Straße zu bringen und Tests fahren zu können, hatten wir zudem einige kommerziell erhältliche GPS-Tracker mit LoRa-Modem gekauft und getestet. Das war hier vor allem der <a href="http://www.dragino.com/products/lora/item/142-lgt-92.html">Dragino LGT92</a> – der witzigerweise ein ähnliches Feature Set hat wie unser Eigenaufbau aus T-Beams mit Beschleunigungssensor, und dessen Erfassungszyklus auch ähnlich gedacht ist wie das, auf das wir mit den T-Beams kamen.</p>
+
+<p><img src="/assets/images/blog/20200113_lgtbox.jpg" alt="" /></p>
+
+<p>Zum Testen reichen die Geräte ganz passabel aus; an den Fahrrädern haben wir sie in Feuchtraum-Abzweigdosen mit Schellen aus dem Baumarkt befestigt. Ein Tracker kostet bei den üblichen Einkaufsplattformen rund 40 €.</p>
+
+<h2 id="unsere-geplante-eigene-lösung">Unsere geplante eigene Lösung</h2>
+
+<p>…ist eigentlich grob eine Mischung zwischen dem T-Beam und den Dragino-Trackern: Eine eigene Plattform auf ESP32-Basis mit verbundenem MPU9250-Gyroskop und abschaltbarer Spannungsversorgung für die allzu energiehungrige Sensorik, v.A. das GPS. So kann der Tracker die meiste Zeit im Tiefstschlafmodus verbringen und dabei kaum Energie aufnehmen – und in periodischen Abständen, bzw. wenn die IMU Bewegung erkennt, wacht die Platine auf und ermittelt ggf. die Position.</p>
+
+<p><img src="/assets/images/blog/20200113_testaufbau.jpg" alt="" /></p>
+
+<p>Langfristig möchten wir diese Plattform auch mal testweise mit den Rahmenschlössern verbinden, die Consti und Max bereits analysiert hatten, um damit Entsperrvorgänge anzustoßen. Für den Anfang freuen wir uns aber auch schon um eine sehr energiesparsame Variante, die im Idealfall bei Benutzung des Rads auch über den Nabendynamo erhaltungsgeladen werden kann, so dass die Wartungsintervalle möglichst ausgedehnt werden können.</p>
+
+<p><img src="/assets/images/blog/20200113_current.jpg" alt="" /></p>
+
+<p>Im Testaufbau hat das alles auch schon sehr gut funktioniert. Im Tiefschlaf braucht das System weniger als ein halbes Milliampere, und trotzdem funktioniert die Positionierung vor allem draußen schnell und zuverlässig. Auch hier können Beacon-Systeme an ausgewiesenen Abstellpunkten zur Präzision der Erkennung beitragen.</p>
+
+<h2 id="selber-mitentwickeln">Selber mitentwickeln</h2>
+
+<p>Wir möchten als Freie Soft- und Hardware entwickeln – und dazu gehört auf jeden Fall, auch anderen den Einstieg in die Mitentwicklung zu erleichtern. Sobald wir die ersten prototypenfähigen PCB-Designs haben, landen die natürlich <a href="https://github.com/stadtulm">auf Github</a>. Und wir möchten interessierte Hackspaces auch gerne Platinen aus der ersten Serie zum selbst belöten zuschicken, sobald sie gefertigt sind. Mehr dazu folgt hier, sobald es soweit ist!</p>
+
+          
+        </div>
+      </div>
+      
+      <div class="padding-bottom-4 margin-top-4 margin-bottom-8 usa-prose border-bottom-05 border-base-lightest">
+        <h3 class="title"><a class="usa-link text-no-underline" href="/2019/11/13/cfg-summit/">Vernetzungstreffen beim FORUM Offene Stadt und dem Code-for-Germany-Summit in Hamburg</a></h3>
+        <div class="text-base margin-bottom-2">
+          <div class="margin-top-neg-105">
+            von <span class="text-bold">Stefan Kaufmann</span> · 13. November 2019
+          </div>
+        </div>
+        <div>
+          
+          <p><img src="/assets/images/blog/20191108_koerber.jpg" alt="" /></p>
+
+<p>Sowohl OpenBike als auch digitransit sind Freie/Open-Source-Softwareprojekte – und das heißt auch, sie brauchen beide unbedingt eine aktive Community von Menschen, die an den Systemen weiterentwickeln, neue Features entwickeln, und vor allem auch die Dokumentation so ausbauen, dass die Systeme für andere nachnutzbar sind.
+Deswegen hat es uns sehr gefreut, vergangenes Wochenende beim <a href="https://offenestadt.info/">FORUM Offene Stadt</a> bei der Körber-Stiftung in Hamburg und danach beim <a href="https://codefor.de/">Code-for-Germany-Communitysummit</a> von den beiden Projekten zu erzählen und uns mit Gleichgesinnten zu vernetzen.</p>
+
+<p>Beim Barcamp-Format im Kubus der Körber-Stiftung konnte Maxi einer ganzen Traube von Menschen den digitransit-Stack vorstellen, und es ergaben sich auch gleich sehr schnell Ideen für neue Features oder andere Orte, an denen das System auch einmal getestet werden könnte.</p>
+
+<p>(Nebenbei: Es sind tatsächlich genau diese Formate, die Menschen sowohl aus der Verwaltung, als auch aus digitalem Ehrenamt, Wirtschaft und Forschung zusammenbringen, die am meisten Inspiration und Austausch mit sich bringen. Das ist jetzt eine alles andere als revolutionäre Erkenntnis, aber in der Praxis lässt sich doch immer wieder feststellen, dass die meisten Konferenzen immer nur in der eigenen Suppe schwimmen.)</p>
+
+<p><img src="/assets/images/blog/20191109_cfgsummit.jpg" alt="" /></p>
+
+<p>Beim anschließenden Code-for-Germany-Summit konnten diese Ideen dann auch gleich weiter vertieft werden. Die <a href="https://codefor.de/blog/Fuenf-Jahre-Code-for-Germany.html">vor über fünf Jahren ins Leben gerufene</a> Community aus dezentralen OK Labs ist ein wertvolles Netzwerk von motivierten und kompetenten Leuten, die im wahrsten Sinne des Wortes <em>mit Code die Welt verbessern</em> wollen. Oder zumindest ihre eigene Stadt. Und so gab es gleich eine ganze Reihe an Nachfragen, Verbesserungsvorschlägen und Ideen sowohl für OpenBike als auch für digitransit.</p>
+
+<p>Wer auf dieser Ebene mitwirken will, sei hier ausdrücklich auf die weite Community der weit über 1000 Menschen im Slack der Open Knowledge Foundation hingewiesen. Dort gibt es auch eigene Kanäle sowohl für Open-Source-Bikesharing als auch für die Entwicklung an digitransit. Wer dort mitlesen und -schreiben möchte, kontaktiere uns gerne jederzeit.</p>
+
+<p><em>Dankeschön an dieser Stelle an das Team von <a href="https://codefor.de/hamburg">Code for Hamburg</a>, das dieses Wochenende großartig organisiert hat!</em></p>
+
+          
+        </div>
+      </div>
+      
+      <!-- Pagination links -->
+      <div class="grid-row padding-top-2">
+        <div class="tablet:grid-col-4 text-center tablet:order-2 font-body-xs text-base">
+          Page 5 of 6
+        </div>
+        <div class="tablet:grid-col-4 text-right tablet:order-3">
+          
+          <a href="/blog/page/6/index.html" class="paginate-link usa-link text-no-underline text-bold tablet:margin-top-0">Next 3 Posts &rsaquo;</a>
+          <a href="/blog/page/6/index.html" class="paginate-button usa-button margin-top-3">Next 3 Posts &rsaquo;</a>
+          
+        </div>
+        <div class="tablet:grid-col-4 text-left tablet:order-1">
+          
+          <a href="/blog/page/4/index.html" class="paginate-link usa-link text-no-underline text-bold tablet:margin-top-0">&lsaquo; Previous 3 Posts</a>
+          <a href="/blog/page/4/index.html" class="paginate-button usa-button margin-top-2">&lsaquo; Previous 3 Posts</a>
+          
+        </div>
+      </div>
+    </div>
+    <aside class="desktop:grid-col-fill margin-top-4 padding-right-4">
+      <div class="border-top-1 border-accent-cool-darker padding-top-2 margin-bottom-4 usa-prose">
+        <h4 class="">Neuste Beiträge</h4>
+        <ul class="usa-list usa-list--unstyled padding-top-2">
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/09/25/lora-tracker-konfigurieren/">LoraWAN GPS-Tracker konfigurieren</a></li>
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/07/07/openbike_rueckgabe_benachrichtigungen_auth/">Gedanken zur Fahrradrückgabe, Benachrichtigungen und Authentifizierung</a></li>
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/06/30/minikonferenz/">Save the date: Eine kleine OpenBike-Konferenz</a></li>
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/06/25/openbike-qa-1-kurzbericht/">OpenBike Q&A, ein nachgereichter Blogpost</a></li>
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/05/20/openbike-qa-1/">OpenBike Q&A, Heute, 19:00</a></li>
+          
+        </ul>
+      </div>
+      <div class="border-top-1 border-accent-cool-darker padding-top-2 margin-bottom-4 usa-prose">
+        <h4>Links</h4>
+        <ul class="usa-list usa-list--unstyled padding-top-2">
+          <li class="padding-bottom-1">
+            <svg style="vertical-align: middle;" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 text-primary width-2 margin-right-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+              <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+            </svg>
+            <a class="usa-link" href="https://github.com/stadtulm">Github</a>
+          </li>
+          <li class="padding-bottom-1">
+            <svg style="vertical-align: middle;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="rss" class="svg-inline--fa fa-rss fa-w-14 text-primary width-2 margin-right-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path>
+            </svg>
+            <a class="usa-link" href="/feed.xml">RSS Feed</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+  <div class="grid-row padding-top-4 tablet:padding-x-4 margin-bottom-4">
+    <a class="usa-link" href="#blog">Nach oben</a>
+  </div>
+</div>
+
+</main>
+
+<footer class="usa-footer site-footer" role="contentinfo">
+  <div class="footer-section-bottom bg-base-lighter">
+    <div class="grid-container">
+      <div class="grid-row padding-3">
+        <div class="tablet:grid-col" >
+          <div class="logo-links">
+            <a class="footer-logo media_link" href="https://www.ulm.de/leben-in-ulm/digitale-stadt">
+              <img src="/assets/images/zda-logo.svg" width="100" alt="Stadt Ulm, Z/DA" />
+            </a>
+          </div>
+        </div>
+        <div class="tablet:grid-col"></div>
+        <div class="tablet:grid-col">
+          <ul class="add-list-reset">
+            <li><a href="https://www.ulm.de/leben-in-ulm/digitale-stadt">Digitale Agenda</a></li>
+            <li><a href="https://github.com/stadtulm">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col">
+          <ul class="add-list-reset">
+            <li><a href="https://www.ulm.de/sonderseiten/datenschutzerklaerung">Datenschutz</a></li>
+            <li><a href="https://www.ulm.de/sonderseiten/impressum">Impressum</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/uswds/js/uswds.min.js"></script>
+
+</body>
+</html>

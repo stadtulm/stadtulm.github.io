@@ -1,0 +1,316 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+<html class="lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <!-- Basic Page Needs
+    ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Mobile Specific Metas
+    ================================================== -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title and meta description
+    ================================================== -->
+  <title>ulm.dev</title>
+  <meta property="og:title" content="ulm.dev">
+  <meta name="description" content="ulm.dev: build things, create stuff inside the city of ulm.">
+  <meta property="og:description" content="ulm.dev: build things, create stuff inside the city of ulm.">
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@ulm_donau" />
+  <meta name="twitter:title" content="ulm.dev" />
+  <meta name="twitter:description" content="ulm.dev: build things, create stuff inside the city of ulm." />
+
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="/">
+  <meta property="og:url" content="/">
+  <!-- Favicons
+    ================================================== -->
+  <!-- 128x128 -->
+  <link rel="shortcut icon" type="image/ico" href="/assets/images/favicons/favicon.ico">
+  <link rel="icon" type="image/png" href="/assets/images/favicons/favicon.png">
+  <!-- 192x192, as recommended for Android
+    http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+    -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicons/android-chrome-192x192.png">
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="/assets/images/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/favicon-144.png">
+  <!-- CSS
+    ================================================== -->
+  <!-- env: demo -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="page-landing-page layout-demo ">
+  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+  <div class="usa-overlay"></div>
+
+
+<header class="usa-header usa-header--basic" role="banner">
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+      <div class="usa-logo" id="extended-logo">
+        <a href="/" title="Home" aria-label="Home">
+          <img class="logo-img" src="/assets/images/logo.png" alt="ulm">
+          <em class="usa-logo__text">ulm.dev</em>
+        </a>
+      </div>
+      <button class="usa-menu-btn">Menu</button>
+    </div>
+    <nav role="navigation" class="usa-nav">
+      <button class="usa-nav__close"><img src="/assets/uswds/img/close.svg" alt="close"></button>
+      <ul class="usa-nav__primary usa-accordion">
+        
+        
+        
+        
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="/"><span>Home</span></a>
+        </li>
+        
+        
+        
+        
+        <li class="usa-nav__primary-item">
+          <button class="usa-accordion__button usa-nav__link" aria-expanded="false" aria-controls="primary-nav-2"><span>Projekte</span></button>
+          <ul id="primary-nav-2" class="usa-nav__submenu">
+            
+            <li class="usa-nav__submenu-item">
+              <a href="/projects/openbike/">OpenBike</a>
+            </li>
+            
+            <li class="usa-nav__submenu-item">
+              <a href="/projects/digitransit/">digitransit</a>
+            </li>
+            
+          </ul>
+        </li>
+        
+        
+        
+        
+        
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="/blog/"><span>Blog</span></a>
+        </li>
+        
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="usa-layout-docs usa-section" id="main-content">
+  <div class="grid-container">
+    
+
+
+<div class="grid-row grid-gap">
+  <div class="desktop:grid-col-8 usa-prose padding-right-4">
+    <h1 class="title">Eine Stadtverwaltung lernt mobiles Arbeiten, Teil 3. BigBlueButton in groß</h1>
+    <div class="text-base margin-bottom-2">
+        <div class="margin-top-neg-105">
+          von <span class="text-bold">Stefan Kaufmann, Constantin Müller, Maximilian Richt, Katharina Schweiger</span> · 26. April 2020
+        </div>
+    </div>
+    <div>
+    	<p>(die #coronalearnings von z/da, eine blogpostserie)</p>
+
+<p>Dieser Teil sollte schon vor einer Woche erscheinen, aber es war einfach so viel zu tun, dass für das Aufschreiben zu wenig Zeit war. <a href="https://verschwoerhaus.de/was-wir-gerade-tun/">Auf verschwoerhaus.de</a> wurde es schon kurz angeteasert und <a href="https://netzpolitik.org/2020/ulm-baut-offene-bildungsinfrastruktur-fuer-schulen/">auf netzpolitik.org konnten wir das Projekt auch vorstellen:</a> Gemeinsam mit der <a href="https://www.ulm.de/global/datenpool/organisationseinheiten/stadt-ulm/bildung-und-soziales/bildung-und-sport">Abteilung Bildung und Sport</a> der Stadt Ulm rollen wir derzeit als Lückenfüller einen <a href="https://en.wikipedia.org/wiki/BigBlueButton">BigBlueButton</a>-Pool für diejenigen Schulen in Ulm aus, die nicht über andere Werkzeuge wie z.B. den derzeit landesweit ausgerollten Pool abgedeckt werden.</p>
+
+<p>Der Aufschlag dazu fand Anfang der Osterferien statt, und der Leiter der Abteilung war recht pragmatisch in seinem Auftrag. Ein neuer Kollege bei Bildung und Sport, der am 1. April mit der Arbeit anfing, fand folgenden Auftrag für das kleine, gemeinsame Team:</p>
+
+<blockquote>
+  <p>Es wurde […] die Apollo 13 Metapher bemüht. Wir sollen jetzt in einem kleinen Team den „CO2 Filter“ bauen und […] eine Einkaufsliste geben was wir brauchen</p>
+</blockquote>
+
+<p>Die Einkaufsliste war schnell gestrickt, und so fingen wir an, den Rollout umzusetzen. Auf dem Weg durften wir uns intensiv mit <a href="https://social.tchncs.de/@angry/104037839682796290">den Leuten</a> austauschen, die den <a href="https://www.kuketz-blog.de/bigbluebutton-als-virtuelles-klassenzimmer-in-baden-wuerttemberg/">doch recht mächtigen Rollout</a> des Baden-Württemberg-weiten BBB-Systems praktisch umsetzen, und auch von Seiten des <a href="https://www.uni-ulm.de/in/omi/">OMI</a> und des <a href="https://www.uni-ulm.de/einrichtungen/kiz/">kiz der Uni Ulm</a> gab es wertvollen Input, wie deren unieigenes BBB-Pool ausgerollt und verwaltet wird.</p>
+
+<p>(Einschub: An der Stelle möchte ich noch einmal den riesigen Vorteil von Freier Software und Open Infrastructure hervorheben: Hier arbeiten sehr viele helle Köpfe auf hohem Niveau an ihren jeweiligen Infrastrukturen, und durch den gemeinsamen Austausch und das gegenseitige voneinander-lernen wird sehr viel mehr daraus als die Summe der einzelnen Teile!)</p>
+
+<p>Schon seitdem wir unser „kleines“ BBB im März aufgebaut hatten, haben wir Anfragen auf verschiedensten Kanälen bekommen, wie andere ein BBB-Setup nachbauen können und wo die Grenzen liegen. Wir haben uns gedacht, dass wir an dieser Stelle sowohl einmal zeigen, wie wir unser Einzel-Server-Setup gebaut haben, und wie skalierende Varianten mit Pools aussehen können. Danach folgen eine kleine FAQ und die Probleme, denen wir begegnet sind.</p>
+
+<p>Zwei Dinge sind vorneweg jedoch wichtig: Wir betreuen und betrachten mit unserer Brille vorwiegend die <em>technische</em> Seite. Zu guter Lehre gehört viel viel mehr als eine Online-Lernumgebung – so wie allein ein Klassenzimmer auch keinen guten Unterricht garantiert. Online-Lehre ist ein ganz eigenes Format, das separater Vorbereitung bedarf. Den Unterricht 1:1 ins Netz zu übertragen, wird in der Praxis nur mäßig zufriedenstellende Ergebnisse erzielen. Das wiederum ist aber kein spezifisches BBB-Problem, sondern es trifft auf quasi alle vergleichbaren Systeme zu.<br />
+Zweitens, wir waren in der letzten Woche vom großen Andrang auf das BBB-Schulsystem sehr überwältigt. Wir dachten anfangs, hier vor allem eine Stopgap-Lösung zu bauen. Ich bin <em>sehr</em> auf die kommenden Tage gespannt, in denen wir Stück für Stück die Anmeldungen onboarden werden – und dann sehen, wie die Lastverteilung im Tagesgang wirklich aussieht. Das ist der Part, der sich nicht vorab testen lässt. Mal schauen, wie gut ich heute abend schlafen kann.</p>
+
+<p>Nun aber zur kleinen, quick-and-dirty-Lösung.</p>
+
+<h2 id="ein-server-ein-bbb-viele-leute">Ein Server, ein BBB, viele Leute.</h2>
+
+<p>Das erste Setup war recht schnell installiert. Es handelt sich um eine kleine <a href="https://de.wikipedia.org/wiki/Proxmox_VE">Proxmox</a>-virtualisierte Maschine im Verschwörhauskeller, mit sehr überschaubaren Ressourcen (4 CPUs, 8 GB RAM). Die zugrundeliegende Maschine, auf der die VM läuft, ist ein Dell R610 mit 8× Intel Xeon X5570 bei 2.93 GHz. Insgesamt hat die Host-Maschine 48 GB RAM.</p>
+
+<p><a href="https://robbi5.de">Max</a> sagt scherzhaft, dass die VM im Vergleich zu anderen Hostsystemen auf Raspberry-Pi-Niveau ist (wenngleich wir nicht empfehlen würden, solch eine Umgebung auf einem RasPi umzusetzen). In der Spitze waren auf dieser Maschine 58 NutzerInnen größtenteils mit aktiver eigener Webcam aktiv, und das war auch das einzige Mal, dass die CPU an ihre Grenzen kam. Der Traffic lag in der Spitze bei 45 Mbit/s ausgehend und 9,6 Mbit/s eingehend. Wenn alle Teilnehmenden mit Video in der Konferenz sind, sind sowohl der Datenratenbedarf als auch die CPU-Auslastung relativ hoch; wir hatten auch schon Sessions mit 23 Leuten bei 10 Mbit/s outbound und 2.25 Mbit/s inbound. Your mileage may vary.</p>
+
+<p>Installiert wurde die Maschine mit dem <a href="https://github.com/bigbluebutton/bbb-install">bbb-install</a>-Script auf Ubuntu 16.04 LTS – ja, BBB funktioniert derzeit offiziell exakt nur auf dieser veralteten Version, was Folgeprobleme z.B. mit Python-Versionen nach sich zieht. Dazu später mehr.</p>
+
+<p>Wichtig beim Rollout ist auch, die <em>Möglichkeit</em> zur Aufzeichnung von Sessions von vorneherein zu deaktivieren. Tatsächlich <a href="https://github.com/bigbluebutton/bigbluebutton/issues/9202">finden nämlich standardmäßig Aufzeichnungen aller Sessions statt</a>, und der Recording-Knopf setzt hier nur Schnittmarken und startet nach Ende der Session eine Nachbearbeitungspipeline. Das von vorneherein zu deaktivieren schafft bessere DSGVO-Compliance und schützt auch vor vollaufenden Platten.</p>
+
+<h3 id="turn-und-stun-zur-firewalldurchbohrung">TURN und STUN zur Firewalldurchbohrung</h3>
+
+<p>Da nicht nur „unsere“ Verwaltung in Ulm, sondern auch andere Behörden und Projektpartner mittlerweile diese Instanz nutzen, ist es sehr wichtig, durch Firewalls durchzukommen, die noch auf Sicherkeitskonzepten von vor 30+ Jahren stammen (alles ist aus Prinzip erstmal zugenagelt). Nach einigem Herumprobieren läuft daher gerade auf einer seperaten VM ein <a href="https://github.com/coturn/coturn">coturn</a>, das <a href="https://de.wikipedia.org/wiki/STUN">STUN</a> und <a href="https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT">TURN</a> auf Port 443 abwickelt. Damit ließen sich zum Erstaunen mancher Gegenstelle sogar bundesministerielle Firewalls durchbohren, bei denen selbst Jitsi bislang nicht funktionierte. Das ist natürlich andererseits wieder der Vorteil einer so eindimensionalen behördlichen IT-Sicherheit ;)</p>
+
+<p>(Mehr zu dieser Besonderheit im skalierenden Ansatz weiter unten, hier gibt es ggf. Fallstricke).</p>
+
+<h3 id="dialin-via-sip">Dialin via SIP</h3>
+
+<p>Da im Hintergrund von BBB ein <a href="https://en.wikipedia.org/wiki/Freeswitch">FreeSWITCH</a> läuft, lassen sich relativ einfach Einwahlnummern für diejenigen Menschen anbinden, die nicht so einfach ein Headset an ihren Rechner anschließen oder aus anderen Gründen Probleme mit dem Rechner-Audio haben. Hier gibt es eine große Auswahl an SIP-Telefonie-Anbietern mit lokalen Einwahlnummern. Letztlich ist aber die Zahl der eingehenden, gleichzeitig nutzbaren Kanäle begrenzt, weswegen sich hier nur einwählen sollte, wer nicht anders kann. An den Server wird <em>eine</em> Rufnummer gebunden; die Auswahl des Konferenzraums erfolgt dann über eine PIN.</p>
+
+<h3 id="einfach-flott-rein">Einfach flott rein</h3>
+<p>Im Gegensatz zu verschlossenen Konferenzlösungen für bestimmte Nutzergruppen, die meist bei der Person, die das Meeting erstellt einen Account erzwingt, haben wir bei der kleinen Lösung versucht, es so einfach wie möglich zu gestalten. Der Flow, der auch z.B. so bei Jitsi Meet funktioniert, besteht aus der Eingabe eines Raumnamens, der dann angelegt wird, falls er noch nicht existiert. Danach folgt die Eingabe des eigenen Namens. Das Meeting bekommt einen URL, den die Teilnehmenden besuchen können und nur noch ihren Namen eingeben müssen. Ein Vorteil dieser Lösung im Gegensatz beispielsweise zu <a href="https://github.com/bigbluebutton/greenlight">greenlight</a> liegt auch darin, dass man sich mit dieser Schmalspurlösung nicht sofort Docker und Datenbanken und E-Mail-Versand und sonstige weitere Abhängigkeiten eintritt.</p>
+
+<p>Das BBB-Frontend dafür ist im Wesentlichen wenig anderes als eine angepasste Variante der HTML5-Demo von BBB. Wir haben es als <a href="https://github.com/stadtulm/bbb-easy-join">bbb-easy-join</a> veröffentlicht.</p>
+
+<h3 id="monitoring-ein-auge-drauf-haben">Monitoring, ein Auge drauf haben</h3>
+
+<p><img src="/assets/images/blog/20200426_mon1.png" alt="Monitoring-Graph" /></p>
+
+<p><a href="https://mon.service.verschwoer.haus/d/HIbd_CXZz2/bigbluebutton-server-instance">Monitoring</a> mit hübschen Graphen ist <em>immer</em> toll! Deswegen haben wir auch in der kleinen Lösung Prometheus und Grafana laufen, die ihre Daten über <a href="https://github.com/greenstatic/bigbluebutton-exporter">bbb-exporter</a> bekommen. Dort gab es vor Kurzem auch <a href="https://github.com/greenstatic/bigbluebutton-exporter/pull/10">einen Pull Request</a> eines ~alten~ jungen Bekannten aus dem Jugend-hackt-Kosmos, um zu sehen, wie viele Menschen per SIP eingewählt sind.</p>
+
+<h2 id="viele-server-viele-bbbs-noch-mehr-leute">Viele Server, viele BBBs, noch mehr Leute</h2>
+
+<p>Irgendwann ist aber auch auf „handelsüblichen“ Servern die Kapazität zu Ende. Das lässt sich auch nur begrenzt durch mehr CPU-Power beheben. Aufgrund der Systemarchitektur mit <a href="https://de.wikipedia.org/wiki/Node.js">node.js</a> – einer Kernkomponente, die sich um den Chat, das Whiteboard, aber auch das Signaling der Status der Teilnehmenden kümmert – laufen hier wesentliche Teile des Setups weiterhin single-threaded. Es gibt ein <a href="https://github.com/bigbluebutton/bigbluebutton/pull/8788">Issue zum Aufteilen</a> und ein weiteres Issue, um die <a href="https://github.com/bigbluebutton/bigbluebutton/issues/8937">veraltete nodejs-version hochzuziehen</a>, was das Gesamtsetup hoffentlich etwas performanter macht.</p>
+
+<p>Egal wie sie aber nun beschaffen sind: Irgendwann braucht es mehr als einen BBB-Server. Aus der BBB-Welt gibt es dafür <a href="https://github.com/blindsidenetworks/scalelite">scalelite</a> für die Lastverteilung. Wie das in etwa aussieht, zeigt das folgende Bild:</p>
+
+<p><img src="/assets/images/blog/20200426_scalelite.png" alt="Andreas Grupp / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)" /> 
+Skizze von <a href="https://commons.wikimedia.org/wiki/File:BBB-Scalelite-Infrastruktur.png">Andreas Grupp auf Wikimedia Commons</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA</a></p>
+
+<p>Im Hintergrund steht ein Pool an Servern, die sich jeweils am scalelite anmelden. Der Einstieg der Teilnehmenden erfolgt dann über das Frontend der Wahl – das kann z.B. das erwähnte greenlight sein, aber auch Moodle oder andere passende Plattformen. Scalelite weist dann im Hintergrund der angefragten Session einen Poolserver mit Kapazität zu und dann kann es losgehen.</p>
+
+<h3 id="automatisieren-automatisieren-automatisieren-und-vielleicht-virtualisieren">Automatisieren, automatisieren, automatisieren (und vielleicht virtualisieren)</h3>
+
+<p>Um diesen Pool hochzuziehen, haben wir uns diverse Ansible-Playbooks zum Vorbild genommen. Neben den <a href="https://release.bbb.uni-ulm.de">Playbooks der Uni Ulm</a> und <a href="https://codeberg.org/DigitalSouveraeneSchule/bbb">der Landeslösung</a> haben wir vor allem <a href="https://github.com/n0emis/ansible-role-bigbluebutton">das Skript von n0emis</a> integriert – noch so ein junger Bekannter aus dem Jugend-hackt-Kosmos :) Das <a href="https://github.com/stadtulm/a13-ansible">letzliche Playbook</a> ermöglicht es uns, innerhalb von rund 20 Minuten aus einer blanken Maschine einen zusätzlichen Poolserver zu bauen. Für weitergehende Ansätze mit Virtualisierung und Orchestrierung fehlte bislang leider die Zeit.</p>
+
+<p><img src="/assets/images/blog/20200426_mon2.png" alt="Monitoringgraph von ulmlernt" /></p>
+
+<p>Auch hier gibt es ein <a href="https://mon.ulmlernt.org/d/HIbd_CXZz/bigbluebutton-all-servers">Monitoring</a>, um einen Überblick über den Status und die Auslastung der Pool-Server zu haben. Wir werden uns hier Schritt für Schritt mit den praktischen Daten herantasten müssen – wir wissen grob, wie viel Last ein einzelner Server abkann (die Doku spricht von rund 150 Teilnehmenden, die Uni Ulm meldete Erfahrungen mit bis zu 300 TN), die tatsächliche Last ist aber eine Funktion aus zeitlicher Verteilung, tatsächlicher Benutzung der Räume und wie viele Menschen dabei ihr Video laufen haben. Das wird sich nur in der Praxis ermitteln lassen.</p>
+
+<h3 id="grenzen-nichttechnisch">Grenzen, nichttechnisch</h3>
+
+<p>Zunächst das Offensichtliche: Alles, was wir hier machen, ist ein Notbehelf. Wir können nicht binnen einer Woche Onlinelehre aus dem Nichts schaffen – und das ist keine Werkzeug- sondern eine Strukturfrage. Ich bin mir sicher, dass in den kommenden Wochen Kiebitzereien von der Seitenlinie kommen werden, warum nicht $XYZ genutzt wurde, weil das ja viel besser gehe.</p>
+
+<p>Kern des Problems ist und bleibt aber: Eine Klassenzimmersituation <em>kann</em> nicht 1:1 ins Netz übertragen werden, und Onlinedidaktik erfordert ganz andere Vorgehensweisen als Klassenzimmerunterricht. Diese Erfahrung wird nicht viel anders sein als die in der Geschäftswelt, wo in den vergangenen Wochen versucht wurde, klassische Präsenzarbeit mit den Werkzeugen verteilten Arbeitens 1:1 umzusetzen – das geht nur mäßig gut, und <em>effizientes</em> verteiltes Arbeiten erfordert ganz andere Paradigmen.</p>
+
+<p>Ich habe aber viel Begeisterung und Umsetzungswillen von den ersten alphatestenden LehrerInnen gesehen, und hoffe, dass die Kollegien der teilnehmenden Schulen sich intern und untereinander weiterhelfen und gegenseitig fortbilden. Dass das leichter gesagt als getan ist, ist mir schmerzhaft bewusst. <a href="https://lehrerfortbildung-bw.de/st_digital/medienwerkstatt/dossiers/bbb/">Bei der LehrerInnenfortbildung BW entsteht derzeit ein Katalog an Handreichungen</a>, den ich sehr empfehlen kann. Der Fokus auf gezielt eingesetzte Webinare und Gruppenarbeiten sowie Flipped Classrooms, ergänzt durch Sprechstunden, erscheint mir ein guter Ansatz – denn jetzt kommen wir ins technische.</p>
+
+<h3 id="grenzen-technisch-allgemein">Grenzen, technisch, allgemein</h3>
+
+<p>Die Annahme, dass Online-Unterricht analog zum Klassenzimmer funktionieren kann, kommt sehr schnell schon technisch an Grenzen. Ich zitiere hier verkürzt aus einer Überschlagsrechnung, die mir zur Verfügung gestellt wurde: In ganz Baden-Württemberg finden pro Woche rund 2,2 Millionen Unterrichtsstunden statt. Selbst bei gleichmäßiger Verteilung auf 8 Stunden am Tag über 5 Tage die Woche entspräche dies 55.000 gleichzeitiger Videokonferenz-Sessions. Die oben in der simplen Lösung beobachteten Werte decken sich mit dem, was mir vorliegt: Selbst wenn nur die Lehrkraft an 25 SchülerInnen streamt, liegen wir bei 5–10 Mbit/s outbound. Selbst wenn nun alle Unterrichtsstunden wirklich gleichverteilt über den Tag stattfinden und nur gelegentlich SchülerInnen ebenfalls ihr Video zuschalten, kommen wir so schnell in den Terabit-Bereich, um Lastspitzen abzufangen.</p>
+
+<p>Und da reden wir noch gar nicht von den Peering-Problematiken zu Access-Netzen oder der Situation, wenn mehrere SchülerInnen sich einen Anschluss teilen – und schon gar nicht von Fragen sozialer Ungleichheit und wer überhaupt genügend passende Endgeräte hat.</p>
+
+<p>Ich denke, dass diese Fragen auch keine der anderen Webconferencing-Lösungen beantworten kann.</p>
+
+<p>Nach diesem kleinen ~Downer~ Realitätscheck nun noch ein paar andere Limitationen.</p>
+
+<h3 id="grenzen-technisch-bbb">Grenzen, technisch, BBB</h3>
+
+<p>Der Bauprozess für BBB ist… problematisch. Die Plattform an sich finde ich für Onlinelehre enorm stark. Man merkt der Developer-Community aber an, dass sie lange Jahre ein Nischendasein fristete, und die größere Free-Software-Welt erst jetzt – notgedrungen – so richtig auf sie aufmerksam geworden war. Wie oben beschrieben baut BBB auf Ubuntu 16.04 LTS ab, derweil seit dieser Woche schon die <em>übernächste</em> LTS-Version veröffentlicht wurde. Die Voraussetzungen für den Bau und die Paketierung des Systems sind nur spärlich dokumentiert, <a href="https://github.com/bigbluebutton/bigbluebutton/issues/8861">was mittlerweile durch die neugewonnene Aufmerksamkeit auch umfangreich diskutiert wird</a></p>
+
+<p>Daraus folgende Effekte sind auch zu sehen. Das Projekt BBB macht gerade durch die vorher nie dagewesene Aufmerksamkeit rapide Entwicklungsschritte. Alle paar Tage erscheinen neue Package-Releases, und nicht immer ist im Changelog oder durch Release-Notes erkennbar, dass für das Ausrollen der neuen Pakete Änderungen auf die URLs der passenden Repositories nötig sind.<br />
+Ich halte es auch für wichtig, hier offen mit <a href="https://github.com/tchenu/CVE-2020-12112/">bereits erkannten</a> und möglicherweise künftig noch auftretenden CVEs umzugehen. Wir arbeiten weiter daran, eine technisch möglichst umfassende Absicherung unseres BBB-Pools gewährleisten zu können. Es kann aber seriöserweise ebensowenig wie bei anderen – auch proprietären – Werkzeugen versprochen werden, dass BBB grundsätzlich „sicher“ ist. Das ist mit ein Grund, warum wir so darauf pochen, dass Webconferencing-Werkzeuge kein 1:1-Transfer von Präsenzklassenräumen sein können.</p>
+
+<p>Wir hoffen alle darauf, dass BBB in der nahen Zukunft schrittweise einen Security-Audit bekommt und die vermutlich unerwartete und ungewollte Rolle als kritische Infrastruktur aktuell noch viel mehr Augen und Aufmerksamkeit auf das Projekt lenkt – damit am Ende wir alle mehr davon haben. Die Liste an Pull Requests und Verbesserungsvorschlägen ist in der Tat gleichermaßen vielfältig wie Anlass zur Freude.</p>
+
+<p>Eine Baustelle, die <a href="https://github.com/bigbluebutton/bigbluebutton/issues/8133">nicht nur uns betrifft,</a> sind Audioprobleme bei iOS-Geräten. Die großartigen Datenzauberer und -hexen in unserem Team arbeiten gerade an einer besseren STUN/TURN-Konfiguration, um auch dieses Problem zu lösen und danach auch zu dokumentieren. Auch hier sind aber nicht nur wir am Ball, glücklicherweise. Wenn ich nach Twitter gehe, sieht sich gerade gefühlt ein Drittel der Tech-Welt BBB näher an.</p>
+
+<h2 id="mehr">Mehr</h2>
+
+<p>Gerade diese gesammelte Aufmerksamkeit ist im deutschsprachigen Raum gerade erfreulich gebündelt. <a href="https://twitter.com/systemagie">Holger</a>, der schon eine tragende Rolle bei der Weiterentwicklung von digitransit im verteilten Transportkollektiv einnimmt, hatte <a href="https://twitter.com/systemagie/status/1251141205494239232">vergangenen Montag schon zu einem Austausch</a> im Rahmen des <a href="https://di.c3voc.de/">digital verteilten Onlinechaos</a> eingeladen. Morgen abend soll es eine nächste Runde des Austauschs geben, und es existiert auch <a href="https://matrix.to/#/#bigbluebutton-de:matrix.org">ein Matrix/Riot-Channel</a>, der auch in den Slack der Open Knowledge Foundation gespiegelt wird. Ich kann nur alle Interessierten einladen, sich einzubringen – gemeinsam können wir noch viel mehr aus diesem Projekt machen :)</p>
+
+<p>Das nun als sonntagabendlicher sehr später Aufschrieb des Status Quo. Morgen wissen wir mehr, ob uns das Ding um die Ohren fliegt. Stay tuned.</p>
+
+    </div>
+  </div>
+  <aside class="desktop:grid-col-fill margin-top-4 padding-right-4">
+      <div class="border-top-1 border-accent-cool-darker padding-top-2 margin-bottom-4 usa-prose">
+        <h4 class="">Neuste Beiträge</h4>
+        <ul class="usa-list usa-list--unstyled padding-top-2">
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/09/25/lora-tracker-konfigurieren/">LoraWAN GPS-Tracker konfigurieren</a></li>
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/07/07/openbike_rueckgabe_benachrichtigungen_auth/">Gedanken zur Fahrradrückgabe, Benachrichtigungen und Authentifizierung</a></li>
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/06/30/minikonferenz/">Save the date: Eine kleine OpenBike-Konferenz</a></li>
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/06/25/openbike-qa-1-kurzbericht/">OpenBike Q&A, ein nachgereichter Blogpost</a></li>
+          
+          <li class="padding-bottom-1"><a class="usa-link" href="/2020/05/20/openbike-qa-1/">OpenBike Q&A, Heute, 19:00</a></li>
+          
+        </ul>
+      </div>
+      <div class="border-top-1 border-accent-cool-darker padding-top-2 margin-bottom-4 usa-prose">
+        <h4>Links</h4>
+        <ul class="usa-list usa-list--unstyled padding-top-2">
+          <li class="padding-bottom-1">
+            <svg style="vertical-align: middle;" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 text-primary width-2 margin-right-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+              <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+            </svg>
+            <a class="usa-link" href="https://github.com/stadtulm">Github</a>
+          </li>
+          <li class="padding-bottom-1">
+            <svg style="vertical-align: middle;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="rss" class="svg-inline--fa fa-rss fa-w-14 text-primary width-2 margin-right-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor" d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z"></path>
+            </svg>
+            <a class="usa-link" href="/feed.xml">RSS Feed</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+</div>
+
+
+  </div>
+</main>
+
+<footer class="usa-footer site-footer" role="contentinfo">
+  <div class="footer-section-bottom bg-base-lighter">
+    <div class="grid-container">
+      <div class="grid-row padding-3">
+        <div class="tablet:grid-col" >
+          <div class="logo-links">
+            <a class="footer-logo media_link" href="https://www.ulm.de/leben-in-ulm/digitale-stadt">
+              <img src="/assets/images/zda-logo.svg" width="100" alt="Stadt Ulm, Z/DA" />
+            </a>
+          </div>
+        </div>
+        <div class="tablet:grid-col"></div>
+        <div class="tablet:grid-col">
+          <ul class="add-list-reset">
+            <li><a href="https://www.ulm.de/leben-in-ulm/digitale-stadt">Digitale Agenda</a></li>
+            <li><a href="https://github.com/stadtulm">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="tablet:grid-col">
+          <ul class="add-list-reset">
+            <li><a href="https://www.ulm.de/sonderseiten/datenschutzerklaerung">Datenschutz</a></li>
+            <li><a href="https://www.ulm.de/sonderseiten/impressum">Impressum</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/uswds/js/uswds.min.js"></script>
+
+</body>
+</html>
