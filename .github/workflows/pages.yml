@@ -15,7 +15,7 @@ jobs:
         -v ${{ github.workspace }}:/srv/jekyll \
         -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         timbru31/ruby-node:2.5 \
-        /bin/bash -c "chmod -R 777 /srv/jekyll; cd /srv/jekyll; npm ci && npm run build"
+        /bin/bash -c "chmod -R 777 /srv/jekyll; cd /srv/jekyll; bundle install && npm ci && npm run build"
 
     - name: Deploy to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2.5.0
