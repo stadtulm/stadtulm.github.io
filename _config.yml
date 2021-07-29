@@ -18,10 +18,9 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: ulm.dev
-email:  hallo@ulm.dev
+title: ulm dev
 description: >- # this means to ignore newlines until "baseurl:"
-  ulm.dev: build things, create stuff inside the city of ulm.
+  build things, create stuff inside the city of ulm.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ulm.dev" # the base hostname & protocol for your site, e.g. http://example.com
 

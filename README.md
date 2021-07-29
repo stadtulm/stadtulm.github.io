@@ -1,8 +1,8 @@
-# ulm.dev
+# stadtulm dev blog
 
 This website is based on the [U.S. Web Design System v 2.0](https://v2.designsystem.digital.gov) [Jekyll theme](https://jekyllrb.com/docs/themes/).
 
-Building and deployment is handled by the ulm.dev CI. Look into [the GitHub Environments Tab](https://github.com/stadtulm/ulm.dev/deployments) and the build status on the commits for status, messages and a history.
+Building and deployment is handled by GitHub Actions. Look into [the GitHub Actions Tab](https://github.com/stadtulm/ulm.dev/actions) and the build status on the commits for status, messages and a history.
 
 The original readme of the jekyll theme follows below:
 
