@@ -7,7 +7,7 @@ excerpt: Wie wir die Wifi-Geolocation-Tracker zusammenbauen.
 
 
 
-Wir hatten [im Januar schon einmal beschrieben](https://ulm.dev/2020/01/13/trackinghardware/), dass wir auch selbst entwickelte Wifi-Tracker zur Positionsbstimmung benutzen. Das [Hardwaredesign](https://github.com/stadtulm/Lora-Wifi-Location-Tracker/blob/master/hardware/README.md) und die [Firmware](https://github.com/stadtulm/Lora-Wifi-Location-Tracker), welche wir dafür entwickelt haben ist natürlich als OpenSource bzw. OpenHardware auf GitHub verfügbar.
+Wir hatten [im Januar schon einmal beschrieben](/2020/01/13/trackinghardware/), dass wir auch selbst entwickelte Wifi-Tracker zur Positionsbstimmung benutzen. Das [Hardwaredesign](https://github.com/stadtulm/Lora-Wifi-Location-Tracker/blob/master/hardware/README.md) und die [Firmware](https://github.com/stadtulm/Lora-Wifi-Location-Tracker), welche wir dafür entwickelt haben ist natürlich als OpenSource bzw. OpenHardware auf GitHub verfügbar.
 
 Allerdings ist es sicher auch interessant, wie genau wir die Tracker momentan einsetzen. Theoretisch funktioniert die Platine ja einfach, wenn man sie zusammen baut, aber irgendwie muss sie ja auch ans Fahrrad und mit Strom versorgt werden. Wie wir das aktuell umsetzen, beschreiben wir hier.
 
