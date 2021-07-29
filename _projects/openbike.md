@@ -17,7 +17,7 @@ Im Projekt Openbike entwickelt die Stadt Ulm eine Freie/Open-Source-Software (F/
 
 **Als Beschäftigte:r der Stadt Ulm**: Gerne direkt auf [openbike.ulm.dev](https://openbike.ulm.dev) einloggen und uns für die Freischaltung des Accounts und mehr Informationen eine Mail an [openbike@ulm.dev](mailto:openbike@ulm.dev) schicken.
 
-**Mitgestalten!** Wir freuen uns auch insbesondere über Feedback, Verbesserungsvorschläge, Fehlermeldungen und eure Ideen, wie das Bikesharing, die Räder und alles darumherum für euch noch einfacher, besser und angenehmer gemacht werden kann &rarr; [support@ulm.dev](mailto:support@ulm.dev)
+**Mitgestalten!** Wir freuen uns auch insbesondere über Feedback, Verbesserungsvorschläge, Fehlermeldungen und eure Ideen, wie das Bikesharing, die Räder und alles darumherum für euch noch einfacher, besser und angenehmer gemacht werden kann &rarr; [openbike@ulm.dev](mailto:openbike@ulm.dev)
 
 Verbesserungen direkt am Code der Softwarekomponenten sind auch sehr gern gesehen: [Systemüberblick](https://github.com/stadtulm/OpenBike), [cykel (Backend)](https://github.com/stadtulm/cykel) und [voorwiel (Frontend)](https://github.com/stadtulm/voorwiel), sowie weitere [Einzelservices im GitHub-Account](https://github.com/stadtulm).
 
