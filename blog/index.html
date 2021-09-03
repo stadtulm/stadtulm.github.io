@@ -129,6 +129,62 @@
       <!-- This loops through the paginated posts -->
       
       <div class="padding-bottom-4 margin-top-4 margin-bottom-8 usa-prose border-bottom-05 border-base-lightest">
+        <h3 class="title"><a class="usa-link text-no-underline" href="/2021/09/03/ixsi-gbfs-converter/">Converter von IXSI nach GBFS für Carsharing</a></h3>
+        <div class="text-base margin-bottom-2">
+          <div class="margin-top-neg-105">
+            von <span class="text-bold">Constantin Müller, Maximilian Richt</span> · 03. September 2021
+          </div>
+        </div>
+        <div>
+          
+          <p><img src="/assets/images/blog/20210903-carsharing.jpg" alt="Carsharingauto an der Mobilitätsstation am Eselsberg in Ulm" /></p>
+
+<p>Dass wir für Bikesharing, wie unserem <a href="https://ulm.dev/projects/openbike/">selbstgebauten OpenBike</a>, auf GBFS - der internationalen <a href="https://github.com/NABSA/gbfs"><em>General Bikeshare Feed Specification</em></a> - setzen ist vielleicht bekannt. Aber was genau ist IXSI jetzt? Das <em>Interface for X-Sharing Information</em>, kurz IXSI, ist ein mit Fördermitteln unter anderem an der <a href="https://www.researchgate.net/publication/277020604_IXSI_-_Interface_for_X-Sharing_Information">RWTH Aachen entstandener</a> Standard zum Austausch zwischen Sharingdiensten und Auskunftsdiensten und wird hauptsächlich von der deutschen Carsharing-Industrie benutzt um Daten zwischen den einzelnen Carsharern austauschen zu können.</p>
+
+<p>Im Rahmen der <a href="https://www.zukunftsstadt-ulm.de/eselsberg/mobilitaets-station">Mobilitätsstation am Eselsberg</a> fordern wir von den Anbietern, welche dort Mobilitätsdienste anbieten wollen (und zukünftig auch für alle Mobilitätsanbieter, die in der gesamten Stadt anbieten wollen) die Bereitstellung von offenen Daten zur Verfügbarkeit der Angebote.</p>
+
+<p>Für Bikesharing und Scootersharing fordern wir bereits <a href="https://www.ulm.de/-/media/ulm/vgv/vp/downloads/escooter/kooperationsvereinbarung-fr-etretrollersharing-in-ulm.pdf">in unserer Kooperationsvereinbarung [PDF]</a> GBFS. Zwar wurde GBFS ursprünglich für Bikesharing entwickelt, aber es stellt sich schnell raus, dass sich die Auskunft von Bikesharing und anderen Verkehrsmitteln wie Leihautos gar nicht so stark unterscheidet. Zudem sind bereits für die zukünftige GBFS-Version 3.0 <a href="https://github.com/NABSA/gbfs/pull/350">Erweiterungen für Carsharing</a> und eine <a href="https://github.com/NABSA/gbfs/pull/354">Umbenennung zu weniger »Bike«, mehr »Vehicle«</a> geplant. Daher eignet sich GBFS aus unserer Sicht bereits jetzt dazu, auch offene Daten zu Carsharing auszuliefern.</p>
+
+<p>Offene Daten im Carsharingmarkt sind wichtig - und leider zurzeit immer noch sehr rar. Die technischen Dienstleister der Carsharer und vorallem der Bundesverband Carsharing befinden sich, wie vor ein paar Jahren auch die meisten Verkehrsverbünde, noch im Glauben, dass offene Daten sie ins Verderben stürzen und ihre Geschäftsmodelle daran zerbrechen würden.
+Eine stichhaltige Begründung für diese Sorge konnte uns bis heute niemand liefern und wir glauben sogar, dass das Gegenteil der Fall ist:
+Um so mehr Menschen von einem verfügbaren Mobilitätsangebot wissen, um so mehr sind bereit es zu nutzen. Offene Daten könen genau für diese Sichtbarkeit der Angebote in Karten und Mobilitätsapps sorgen. Um so verbreiteter der Standard der Daten, um so einfacher ist es, diese Daten in vorhandene Anwendungen zu integrieren. Genau deswegen setzen wir hier auf das interantional verbreitete GBFS. Aber auch Prototypen und Nischenanwendungen profitieren hier von Open Data und verbreiteten Standards, da so auf vorhandene Programmierbibliotheken gesetzt werden kann oder Lösungen aus anderen Städten in neue Regionen übertragen werden können ohne dass diese aufwendig neu entwickelt werden müssen.<sup id="fnref:digitransit"><a href="#fn:digitransit" class="footnote">1</a></sup></p>
+
+<p>Und am Ende sitzt die Kundin dann sowieso im Fahrzeug des Anbieters - von einem vielbeschworenen drohenen »Verlust des Kundenkontakts« kann also wirklich nicht die Rede sein.</p>
+
+<p>Die Software der in Ulm ansässigen Carsharing-Anbieter unterstützt leider noch kein GBFS, und der Softwareanbieter war nicht bereit, selbst GBFS zu implementieren. Um die Bereitstellung von GBFS als Open Data trotzdem zu ermöglichen, haben wir uns dann also darauf geeinigt, dass uns die vorhandene IXSI-Schnittstelle bereitgestellt wird. Auf deren Basis entwickelten wir dann eine Software, welche die IXSI-Daten regelmäßig abfragt, nach GBFS konvertiert und öffentlich zugänglich macht.</p>
+
+<p>Das Ergebnis sind nun zwei GBFS-Endpunkte für die beiden Carsharing-Anbieter, welche ihre Leihautos an der Mobilitätsstation anbieten. Die SWU stellt darüber hinaus die Daten für alle ihre Carsharing-Stationen bereit, der Anbieter Conficars leider nur für die Station am Eselsberg.</p>
+
+<p>Die GBFS-Endpunkte sind unter den folgenden URLs abrufbar:</p>
+<ul>
+  <li>Conficars: <a href="https://gbfs.conficars.de/gbfs.json"><code class="highlighter-rouge">https://gbfs.conficars.de/gbfs.json</code></a></li>
+  <li>SWU2go: <a href="https://ixsi.swu.de/gbfs.json"><code class="highlighter-rouge">https://ixsi.swu.de/gbfs.json</code></a></li>
+</ul>
+
+<p>Den Sourcecode des IXSI-GBFS-Converters stellen wir natürlich auch als OpenSource Software  unter der <a href="https://github.com/stadtulm/ixsi-gbfs-converter/blob/main/LICENSE">freien MIT-Lizenz</a> auf <a href="https://github.com/stadtulm/ixsi-gbfs-converter">https://github.com/stadtulm/ixsi-gbfs-converter</a> zur Verfügung.
+Ein Einsatz des IXSI-GBFS-Converters ist entweder direkt als node.js-Anwendung aus dem Sourcecode oder mit den vorbereiteten Docker-Images unter <a href="https://hub.docker.com/r/stadtulm/ixsi-gbfs-converter">https://hub.docker.com/r/stadtulm/ixsi-gbfs-converter</a> möglich.</p>
+
+<p>Wir freuen uns auch über gemeinsame Weiterentwicklung des Adapters. Vorallem bei der aktuellen Entwicklungsgeschwindigkeit des GBFS-Standards werden sicher weitere Datenfelder auftauchen, die aus IXSI-Daten befüllt werden können. Aktuell fehlen auch noch die mit GBFS 2.1 eingeführten <a href="https://github.com/NABSA/gbfs/blob/v2.2/gbfs.md#vehicle_typesjson-added-in-v21">vehicle types</a>. Zudem ist der Adapter aktuell nur für Stationsbasierte Systeme implementiert - mangels Free-Floating-Carsharer in Ulm. Falls also eine IXSI-Schnittstelle mit Freefloatern auftaucht, freuen wir uns besonders über Pull-Requests, die diese auch implementieren.</p>
+
+<p>Außerdem würden wir uns freuen, wenn weitere Kommunen diesem Beispiel folgen und offene Mobilitätsdaten von den Anbietern einfordern und als Vorraussetzung für den Betrieb von Sharingdiensten machen. Eine <a href="https://mobilitydata.org/gbfs-and-shared-mobility-data-policy-in-europe/">Policy-Anleitung</a> hat MobilityData in den letzten Tagen veröffentlicht, die technischen Vorraussetzungen sind nun mit dem Adapter geschaffen - auch wenn wir hoffen, dass die technischen Dienstleister der Carsharer doch noch einlenken und GBFS direkt in ihre Software einbauen. Bis dahin kann der Adapter auch von den Carsharinganbietern betrieben werden.</p>
+
+<p>Wenn ihr eine Software entwickelt oder betreut, die mit GBFS umgehen kann, integriert doch gern die Daten. Dies hilft auch mehr Bürger*innen und Entscheider*innen zu zeigen, was man mit den Daten alles machen kann - und den Anbietern, dass das alles gar nicht weh tut.</p>
+
+<p>Und natürlich freuen wir uns, wenn ihr dieses Beispiel nutzt um in eurer Kommune offene Mobilitätsdaten anzusprechen.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:digitransit">
+      <p>Ein Beispiel dafür ist <a href="https://ulm.dev/projects/digitransit/">digitransit</a>, welches wir ohne viel Aufwand oder Neuentwicklung für Ulm anpassen konnten. <a href="#fnref:digitransit" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+          
+        </div>
+      </div>
+      
+      <div class="padding-bottom-4 margin-top-4 margin-bottom-8 usa-prose border-bottom-05 border-base-lightest">
         <h3 class="title"><a class="usa-link text-no-underline" href="/2020/09/25/lora-tracker-konfigurieren/">LoraWAN GPS-Tracker konfigurieren</a></h3>
         <div class="text-base margin-bottom-2">
           <div class="margin-top-neg-105">
@@ -237,46 +293,6 @@ Diese Komponente sollte also können:</p>
         </div>
       </div>
       
-      <div class="padding-bottom-4 margin-top-4 margin-bottom-8 usa-prose border-bottom-05 border-base-lightest">
-        <h3 class="title"><a class="usa-link text-no-underline" href="/2020/06/30/minikonferenz/">Save the date: Eine kleine OpenBike-Konferenz</a></h3>
-        <div class="text-base margin-bottom-2">
-          <div class="margin-top-neg-105">
-            von <span class="text-bold">Constantin Müller, Maximilian Richt</span> · 30. Juni 2020
-          </div>
-        </div>
-        <div>
-          
-          <p><img src="/assets/images/blog/20200630_uebertriebeneskonferenzankuendigungsbild.jpg" alt="" /></p>
-
-<p>Schon von Anfang an gab es am Projekt OpenBike Interesse aus den verschiedensten Richtungen. Und vor allem einen großen Bedarf an Vernetzung und Austausch zum Thema Bikesharing. Nun ist es soweit und wir wollen Verwaltungsmitarbeitende, EntwicklerInnen, Fahrradaktivisten, Mobilitätsabteilungen, ehrenamtliche Fahrradverleiherinnen, Fahrradinteressierte und Raumschiffpilotinnen zusammenbringen. Und zwar in Form einer kleinen Minikonferenz. Das ganze wird am <strong>7. und 8. August</strong> stattfinden. Und zwar <strong>online</strong>. <br />
-Hier gehts zur <a href="https://veranstaltung-stadt.ulm.de/openbike2020/c/y2HycuFw7/">Anmeldung</a> und zum aktuellen <a href="https://cfp.verschwoerhaus.de/openbike2020/schedule/#2020-08-07">Programmplan</a></p>
-
-<p>Themen über die wir sprechen wollen:</p>
-
-<ul>
-  <li>Entwicklungsstand von OpenBike</li>
-  <li>Betriebs und Wartungmodelle von Bikesharingsystemen</li>
-  <li>Kommunale Zusammenarbeit bei der Free und OpenSource Software Entwicklung</li>
-  <li>Einbindung von Sharingsystemen in den ÖPNV</li>
-  <li>Zusammenarbeit von Kommunen mit privaten Sharinganbietern</li>
-  <li>Datenaustausch zwischen Anbietern und Kommunen</li>
-  <li>Trackinghardware für Sharingräder</li>
-  <li>Aufsetzen eigener OpenBike-Instanzen</li>
-  <li>Software und Hardwareentwickung</li>
-  <li>Einführung in die OpenBike Softwareentwicklung</li>
-</ul>
-
-<p>Und natürlich werden wir in der Auflistung noch einige Themen vergessen haben, deswegen freuen wir uns über Feedback, welche Themenbereiche und Aspekte für euch noch interessant wären, die hier noch fehlen. Und natürlich freuen wir uns um so mehr, wenn ihr euch mit einbringen wollt und einen Vortrag oder Workshop zu einem der Themen halten könnt.
-Das Programm soll kein Frontalunterricht werden, sondern vor allem dem Erfahrungsaustausch, Diskussion und als Inspiration dienen.</p>
-
-<p>Also: Den 7. und 8. August vormerken und <a href="https://veranstaltung-stadt.ulm.de/openbike2020/c/y2HycuFw7/">hier</a> anmelden! Wir haben es absichtlich auf Freitag/Samstag gelegt, sodass sowohl für Menschen in Verwaltungen, als auch begeisterte Leute aus dem Ehrenamt die Teilnahme möglich wird. Und überlegt euch doch, zu welchem Thema ihr etwas beitragen oder mehr erfahren wollt, eure Themenvorschläge könnt ihr bei der <a href="https://veranstaltung-stadt.ulm.de/openbike2020/c/y2HycuFw7/">Anmeldung</a> mit angeben.</p>
-
-<p>Wir freuen uns auf euch!</p>
-
-          
-        </div>
-      </div>
-      
       <!-- Pagination links -->
       <div class="grid-row padding-top-2">
         <div class="tablet:grid-col-4 text-center tablet:order-2 font-body-xs text-base">
@@ -298,6 +314,8 @@ Das Programm soll kein Frontalunterricht werden, sondern vor allem dem Erfahrung
         <h4 class="">Neuste Beiträge</h4>
         <ul class="usa-list usa-list--unstyled padding-top-2">
           
+          <li class="padding-bottom-1"><a class="usa-link" href="/2021/09/03/ixsi-gbfs-converter/">Converter von IXSI nach GBFS für Carsharing</a></li>
+          
           <li class="padding-bottom-1"><a class="usa-link" href="/2020/09/25/lora-tracker-konfigurieren/">LoraWAN GPS-Tracker konfigurieren</a></li>
           
           <li class="padding-bottom-1"><a class="usa-link" href="/2020/07/07/openbike_rueckgabe_benachrichtigungen_auth/">Gedanken zur Fahrradrückgabe, Benachrichtigungen und Authentifizierung</a></li>
@@ -305,8 +323,6 @@ Das Programm soll kein Frontalunterricht werden, sondern vor allem dem Erfahrung
           <li class="padding-bottom-1"><a class="usa-link" href="/2020/06/30/minikonferenz/">Save the date: Eine kleine OpenBike-Konferenz</a></li>
           
           <li class="padding-bottom-1"><a class="usa-link" href="/2020/06/25/openbike-qa-1-kurzbericht/">OpenBike Q&A, ein nachgereichter Blogpost</a></li>
-          
-          <li class="padding-bottom-1"><a class="usa-link" href="/2020/05/20/openbike-qa-1/">OpenBike Q&A, Heute, 19:00</a></li>
           
         </ul>
       </div>
