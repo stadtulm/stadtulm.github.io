@@ -18,11 +18,11 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: ulm dev
+title: ulm development
 description: >- # this means to ignore newlines until "baseurl:"
   build things, create stuff inside the city of ulm.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ulm.dev" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://stadtulm.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Twitter handle. Only the handle, not the URL.
 twitter: ulm_donau

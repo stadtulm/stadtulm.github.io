@@ -23,6 +23,6 @@ jobs:
         keep_history: true
         build_dir: _site
         jekyll: false
-        fqdn: "ulm.dev"
+        fqdn: "stadtulm.github.io"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
