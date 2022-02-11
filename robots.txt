@@ -1,1 +1,1 @@
-Sitemap: https://ulm.dev/sitemap.xml
+Sitemap: https://stadtulm.github.io/sitemap.xml
